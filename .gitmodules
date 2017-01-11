@@ -25,3 +25,7 @@
 [submodule "EnviroDIY_SoftwareSerialMod"]
 	path = EnviroDIY_SoftwareSerialMod
 	url = https://github.com/EnviroDIY/SoftwareSerialMod
+[submodule "EnviroDIY_SDI12Mod"]
+	path = EnviroDIY_SDI12Mod
+	url = https://github.com/EnviroDIY/Arduino-SDI-12
+	branch = Mayfly
