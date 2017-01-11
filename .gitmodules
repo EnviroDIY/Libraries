@@ -25,3 +25,6 @@
 [submodule "EnviroDIY_PcInt"]
 	path = EnviroDIY_PcInt
 	url = https://github.com/EnviroDIY/Sodaq_PcInt
+[submodule "EnviroDIY_SoftwareSerialMod"]
+	path = EnviroDIY_SoftwareSerialMod
+	url = https://github.com/EnviroDIY/SoftwareSerialMod
