@@ -22,3 +22,6 @@
 [submodule "SDL_Arduino_SSD1306"]
 	path = SDL_Arduino_SSD1306
 	url = https://github.com/switchdoclabs/SDL_Arduino_SSD1306
+[submodule "EnviroDIY_PcInt"]
+	path = EnviroDIY_PcInt
+	url = https://github.com/EnviroDIY/Sodaq_PcInt
