@@ -4,9 +4,6 @@
 [submodule "Sodaq_GPRSbee"]
 	path = Sodaq_GPRSbee
 	url = https://github.com/SodaqMoja/GPRSbee
-[submodule "Sodaq_PcInt"]
-	path = Sodaq_PcInt
-	url = https://github.com/SodaqMoja/Sodaq_PcInt
 [submodule "Sodaq_RTCTimer"]
 	path = Sodaq_RTCTimer
 	url = https://github.com/SodaqMoja/RTCTimer
