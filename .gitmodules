@@ -16,9 +16,9 @@
 [submodule "Adafruit_TSL2561"]
 	path = Adafruit_TSL2561
 	url = https://github.com/Adafruit/TSL2561-Arduino-Library
-[submodule "SDL_Arduino_SSD1306"]
-	path = SDL_Arduino_SSD1306
-	url = https://github.com/switchdoclabs/SDL_Arduino_SSD1306
 [submodule "EnviroDIY_SoftwareSerialMod"]
 	path = EnviroDIY_SoftwareSerialMod
 	url = https://github.com/EnviroDIY/SoftwareSerialMod
+[submodule "Sodaq_PcInt"]
+	path = Sodaq_PcInt
+	url = https://github.com/SodaqMoja/Sodaq_PcInt
