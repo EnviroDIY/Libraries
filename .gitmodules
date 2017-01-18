@@ -19,13 +19,6 @@
 [submodule "SDL_Arduino_SSD1306"]
 	path = SDL_Arduino_SSD1306
 	url = https://github.com/switchdoclabs/SDL_Arduino_SSD1306
-[submodule "EnviroDIY_PcInt"]
-	path = EnviroDIY_PcInt
-	url = https://github.com/EnviroDIY/Sodaq_PcInt
 [submodule "EnviroDIY_SoftwareSerialMod"]
 	path = EnviroDIY_SoftwareSerialMod
 	url = https://github.com/EnviroDIY/SoftwareSerialMod
-[submodule "EnviroDIY_SDI12Mod"]
-	path = EnviroDIY_SDI12Mod
-	url = https://github.com/EnviroDIY/Arduino-SDI-12
-	branch = Mayfly
