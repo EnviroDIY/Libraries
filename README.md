@@ -12,7 +12,7 @@ If you are familiar with Git, clone this repo into your "MyDocuments\Arduino\lib
 * [Sodaq PCInt](https://github.com/SodaqMoja/Sodaq_PcInt) - Administrates and handles pin change interrupts on the Atmel microcontroller built into the Mayfly.  This allows to Mayfly to sleep and save battery.  _Note that in order to use this library simultaneously with SoftwareSerial or the SDI-12 library you must instead use the PcIntMod referenced below._
 
 #### These libraries may be helpful, depending on which peripherals and sensors you have available and how you communicate with them.
-* [Sodaq GPRSBee](https://github.com/SodaqMoja/GPRSbee) - Communicates with the [GPRSBee](https://www.seeedstudio.com/GPRSbee-rev.-6-p-2445.html#) to send data over cellular network.
+* [EnviroDIY_GPRSbee](https://github.com/EnviroDIY/GPRSbeeMod/tree/v1.2_hacked) - Communicates with the [GPRSBee](https://www.seeedstudio.com/GPRSbee-rev.-6-p-2445.html#) to send data over cellular network.  This library is an older version of the Sodaq library that has been hacked to work with both rev0.4 and rev0.6 of the GPRSbee.  Further work is required to make the current Sodaq GPRSbee library work on the EnviroDIY Mayfly.
 * [EnviroDIY SDI-12](https://github.com/EnviroDIY/Arduino-SDI-12) - Implements the [SDI-12](https://en.wikipedia.org/wiki/SDI-12) communications protocol that is used by a wide variety of environmental sensors.
 * [Adafruit DHT](https://github.com/adafruit/DHT-sensor-library) - Controls the low cost [DHT](https://www.adafruit.com/products/385) temperature & humidity sensors sold by Adafruit.
 * [Adafruit TSL2561](https://github.com/Adafruit/TSL2561-Arduino-Library/) - Controls the Adafruit [TSL2561](https://www.adafruit.com/products/439) digital luminosity sensor.

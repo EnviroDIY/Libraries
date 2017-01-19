@@ -1,1 +1,6 @@
+#PyCharm
 .idea/
+
+#Libraries I don't want to track
+Robot_Control/
+SD/
