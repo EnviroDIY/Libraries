@@ -1,9 +1,6 @@
 [submodule "Sodaq_DS3231"]
 	path = Sodaq_DS3231
 	url = https://github.com/SodaqMoja/Sodaq_DS3231
-[submodule "Sodaq_GPRSbee"]
-	path = Sodaq_GPRSbee
-	url = https://github.com/SodaqMoja/GPRSbee
 [submodule "Sodaq_RTCTimer"]
 	path = Sodaq_RTCTimer
 	url = https://github.com/SodaqMoja/RTCTimer
@@ -35,3 +32,7 @@
 [submodule "SDL_SSD1306"]
 	path = SDL_SSD1306
 	url = https://github.com/switchdoclabs/SDL_Arduino_SSD1306
+[submodule "EnviroDIY_GPRSbeeMod"]
+	path = EnviroDIY_GPRSbeeMod
+	url = https://github.com/EnviroDIY/GPRSbeeMod
+	branch = v1.2_hacked
