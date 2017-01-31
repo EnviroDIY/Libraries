@@ -3,13 +3,13 @@ This repository contains _**links**_ to various libraries that are used to suppo
 
 ### How to use them:
 
-If you are familiar with Git, clone this repo into your "MyDocuments\Arduino\libraries" folder.  The libraries should then be accessible to the Arduino Software (IDE).  Each library can also be downloaded individually by clicking on that library and then downloading a ZIP of only that library.
+The simplest way to use these libraries is to right-click on the file "libraries.zip", select "save link as", and save the file somewhere on your computer.  In your the Arduino Software (IDE), import that zip file following the instructions for "Importing a .zip library" from https://www.arduino.cc/en/Guide/Libraries.
 
-If you had cloned this repository with Git prior to 19Jan17 then you may have some problems updating your local clone of this repository because of the conversion from simple subfolder to submodules.  Try these git commands from Git Shell to clean things up if necessary.  Please keep in mind that if you modified any of the libraries yourself, this will erase your changes!
+Please _**DO NOT**_ to use the green "Clone or Download" button to try to download a zip file.  The zip downloaded that way will only contain empty folders instead of the libraries themselves.
 
-* "git checkout -f master" (forces transition to master branch)
-* "git submodule foreach git checkout -- ."    (Cleans up "untracked" files on your computer.  Do not omit the final period!)
-* "git submodule foreach git pull" (updates all submodules on your computer)
+If you prefer and are familiar with Git, clone this repo into your Arduino\libraries folder.  The libraries should then be accessible to the Arduino Software (IDE).  Each library can also be downloaded individually by clicking on that library and then downloading a ZIP of only that library.
+
+Please let us know if you have any trouble installing the libraries!
 
 #### These libraries are for basic components built into the EnviroDIYMayfly:
 * [Adafruit ADS1x15](https://github.com/adafruit/Adafruit_ADS1X15) - Includes the drivers for the auxillary ADC [TI's ADS1115 chip](http://www.ti.com/product/ADS1115) which is built into the Mayfly board. (The ADS115 is a 16-bit analog-to-digital converter (ADC) with a programmable gain amplifier (PGA) and digital comparator.)
