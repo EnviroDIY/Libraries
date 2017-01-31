@@ -1,0 +1,31 @@
+language: python
+python:
+- '2.7'
+git:
+  depth: 3
+env:
+  global:
+  - secure: DPY6geQkH2FZO1PokpoIomX5njSd57zoQxEMpeBKJZxPLfaBmy+ebUwbdWS70Sp5ytcgIcpEoqoPzeb1deK8+srvDgOmnKmda80oB5nAg01s9AN2a2x1wV3eGfB1eyg1i3lV4CoK5FvCCQxSqln6/OpG3x5/DKwNdXdyRtfaxZUC7/UOdx/ccoK8qqAuYx3OW8wVlr5QZi1WfVedHjhT1bJSwJulwNKOciQ3C0oQR2hvQs/9RAF/MNOUg+1YJZy1PwAl7MlOb90HQePrnVHXUFxjWicDI2B9Vhs025NDuvZm9Gq+ferOgiG133JUzWQQ5PeDHCGVqwr2iM/wecjBS9U2soiQ7bbzgvirX3f8bYCL2ShRoF7iMnAR9ApD7Ffn9JJYgrcnHhcn80WpJykzk3kbHhpSEiWz5VspHuhTBlljuRQ91lFi1r2tmVP9TEevPc4ENtKhTepiBI7YTqRvK2cBkTYLOOG87rYAp8L1YpWbrp6du4Z3X8I3T3QBMaveibhR/sHgnNv2ue72FDf96KndDTAaOk6hcRWoeG1BhMsX4kPAqbkpjn2ZXuTtvAdWYDcL9cESmpvMgpcDm6quIgiQkXD935uV0YQjnc1a1NQIRCYJsginQ/F9Mbs/c42gSb2rAF3BL8n8FoLkkKNVgbWSWT8mfiqPMXP8pU/EAu8=
+  - secure: Ao9O8AvXyAQVHSH4bmkiIPjgtISyIerlTnUwLozVq7lNvKbxtKIw/gJaujWomkJ2avJSO7ZJcpQBAl2ymK9Y0EDJfA+PSwEc8hFYEvOXmohMY2nyadDIKgBxlBabIdk3POMRRxE6MeP4Chh/XyWgIziUivf1ImvUoIrgLOifFBVqtiuHYGVBkpEnzmIiKOBiLIbYMarwoljAkjzTaskkvWstDlH4iwqdnKiMHlpzJUDwWMVQFHVPpSLcx8kTHf/XWIA8SWHsqI9NrPa2f7ll+1zKmSqNcxUVMdQH9PTGPd3fCKA6CyPCOrzNFBIy/VpC2r4vHc7oMFnBzbavwZpeiQXK5EPkKDbmvCnP3/UdPNjrbQsh3jnUaxJFz6ZdjTnIVCmlFjTu8BXBMLGfOll0DRzTTeIVIGOf+aUd8Fire7Lndr1KP9Ro207yJF1sSzRjDOrdk5MfRmgDZ7Wvg0VRIxvc/hmH+6/6jx06JVvt+X/5WdPM56eNGFERyjppFRQa1h3ZYLxeDZkDeThwxKG56xdZB/ygY9ujOjtfRYr3OAfzeL/3Hd9uCNECq/sJV65rqlIzl8lGO99gJd8mBfLV9MfaA22Hi48mZ1RYF6X/V2u1FFtUO6qb3EdcztPhbc6nbhPSs+NAJp2f8kYjgLkO5mwzFhcvKJl/sbskyXtJYBw=
+before_install:
+- openssl aes-256-cbc -k "$password" -in id_rsa.enc -out id_rsa -d
+- eval $(ssh-agent -s)
+- chmod 600 id_rsa
+- ssh-add id_rsa
+- git config --global user.email "sdamiano@stroudcenter.org"
+- git config --global user.name "SRGDamia1"
+- git config --global push.default simple
+install:
+- pip install git-archive-all
+script:
+- git clone --branch submods --single-branch git@github.com:EnviroDIY/Libraries.git
+  envirodiylib
+- cd envirodiylib
+- git remote rm origin
+- git remote add origin git@github.com:EnviroDIY/Libraries.git
+- git-archive-all --force-submodules libraries.zip
+- git checkout submods
+- git add -f libraries.zip
+- git status
+- git commit -m "Lastest zip of libraries (Travis build $TRAVIS_BUILD_NUMBER) [ci skip]"
+- git push origin submods
