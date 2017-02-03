@@ -33,3 +33,6 @@
 [submodule "EnviroDIY_PcIntMod"]
 	path = EnviroDIY_PcIntMod
 	url = http://github.com/EnviroDIY/PcIntMod
+[submodule "Adafruit_DHT"]
+	path = Adafruit_DHT
+	url = https://GitHub.com/adafruit/DHT-sensor-library.git
