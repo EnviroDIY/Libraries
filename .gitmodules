@@ -20,6 +20,7 @@
 [submodule "Adafruit_DHT"]
 	path = Adafruit_DHT
 	url = http://github.com/Adafruit/DHT-sensor-library
+	branch = 1.2.3
 [submodule "Adafruit_TSL2561"]
 	path = Adafruit_TSL2561
 	url = http://github.com/Adafruit/TSL2561-Arduino-Library
