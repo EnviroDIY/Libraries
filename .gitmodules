@@ -36,3 +36,5 @@
 [submodule "Adafruit_DHT"]
 	path = Adafruit_DHT
 	url = https://GitHub.com/adafruit/DHT-sensor-library.git
+	branch = edcd0e0
+	
