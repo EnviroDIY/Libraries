@@ -35,9 +35,7 @@
 	url = http://github.com/EnviroDIY/PcIntMod
 [submodule "Adafruit_DHT"]
 	path = Adafruit_DHT
-	url = https://GitHub.com/adafruit/DHT-sensor-library.git
-	branch = edcd0e0
-	
+	url = https://GitHub.com/adafruit/DHT-sensor-library.git	
 [submodule "Adafruit_Sensor"]
 	path = Adafruit_Sensor
 	url = https://github.com/adafruit/Adafruit_Sensor.git
