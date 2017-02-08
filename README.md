@@ -3,7 +3,7 @@ This repository contains _**links**_ to various libraries that are used to suppo
 
 ### How to use them:
 
-The simplest way to use these libraries is to right-click on the file "libraries.zip", select "save link as", and save the file somewhere on your computer.  In your the Arduino Software (IDE), import that zip file following the instructions for "Importing a .zip library" from https://www.arduino.cc/en/Guide/Libraries.
+The simplest way to use these libraries is to right-click on the file "libraries.zip", select "save link as", and save the file somewhere on your computer.  In your the Arduino Software (IDE), import that zip file following the instructions for "Manual installation" from https://www.arduino.cc/en/Guide/Libraries.
 
 Please _**DO NOT**_ to use the green "Clone or Download" button to try to download a zip file.  The zip downloaded that way will only contain empty folders instead of the libraries themselves.
 
