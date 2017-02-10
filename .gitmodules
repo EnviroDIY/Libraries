@@ -1,9 +1,6 @@
 [submodule "Adafruit_ADS1X15"]
 	path = Adafruit_ADS1X15
 	url = http://github.com/Adafruit/Adafruit_ADS1X15
-[submodule "Sodaq_DS3231"]
-	path = Sodaq_DS3231
-	url = http://github.com/SodaqMoja/Sodaq_DS3231
 [submodule "Sodaq_RTCTimer"]
 	path = Sodaq_RTCTimer
 	url = http://github.com/SodaqMoja/RTCTimer
@@ -39,3 +36,6 @@
 [submodule "Adafruit_DHT"]
 	path = Adafruit_DHT
 	url = http://github.com/adafruit/DHT-sensor-library.git
+[submodule "EnviroDIY_DS3231"]
+	path = EnviroDIY_DS3231
+	url = https://github.com/EnviroDIY/Sodaq_DS3231.git
