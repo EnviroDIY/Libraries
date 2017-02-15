@@ -31,7 +31,7 @@ submods.close()
 
 library['dependencies'] = dependencies
 
-jsonfile = open('libraries.json', 'w')
+jsonfile = open('library.json', 'w')
 json.dump(library, jsonfile, indent=1, separators=(',', ': '))
 jsonfile.close()
 
