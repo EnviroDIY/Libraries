@@ -32,10 +32,10 @@
 	url = http://github.com/EnviroDIY/PcIntMod
 [submodule "Adafruit_Sensor"]
 	path = Adafruit_Sensor
-	url = https://github.com/adafruit/Adafruit_Sensor.git
+	url = https://github.com/adafruit/Adafruit_Sensor
 [submodule "Adafruit_DHT"]
 	path = Adafruit_DHT
-	url = http://github.com/adafruit/DHT-sensor-library.git
+	url = http://github.com/adafruit/DHT-sensor-library
 [submodule "EnviroDIY_DS3231"]
 	path = EnviroDIY_DS3231
-	url = https://github.com/EnviroDIY/Sodaq_DS3231.git
+	url = https://github.com/EnviroDIY/Sodaq_DS3231

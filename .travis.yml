@@ -26,8 +26,8 @@ script:
 - git checkout master
 - git submodule foreach git pull
 - git-archive-all --force-submodules libraries.zip
+- python make_libjson.py
 - git add -A
-- git add -f libraries.zip
 - git status
 - git commit -m "Updated all libraries and zip (Travis build $TRAVIS_BUILD_NUMBER) [ci skip]"
 - git push origin master
