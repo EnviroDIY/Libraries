@@ -52,6 +52,10 @@
   {
    "version": "https://github.com/EnviroDIY/Sodaq_DS3231.git",
    "name": "EnviroDIY_DS3231"
+  },
+  {
+   "version": "https://github.com/EnviroDIY/ModularSensors.git.git",
+   "name": "EnviroDIY_ModularSensors"
   }
  ],
  "name": "EnviroDIYMayfly",
