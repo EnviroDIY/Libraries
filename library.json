@@ -34,10 +34,6 @@
    "name": "EnviroDIY_SoftwareSerialMod"
   },
   {
-   "version": "http://github.com/EnviroDIY/Arduino-SDI-12.git#Mayfly",
-   "name": "EnviroDIY_SDI12Mod"
-  },
-  {
    "version": "http://github.com/EnviroDIY/PcIntMod.git",
    "name": "EnviroDIY_PcIntMod"
   },
