@@ -38,3 +38,7 @@
 [submodule "EnviroDIY_ModularSensors"]
 	path = EnviroDIY_ModularSensors
 	url = https://github.com/EnviroDIY/ModularSensors.git
+[submodule "EnviroDIY_SDI12Mod"]
+	path = EnviroDIY_SDI12Mod
+	url = https://github.com/EnviroDIY/Arduino-SDI-12.git
+	branch = Mayfly

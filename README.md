@@ -20,13 +20,15 @@ Please let us know if you have any trouble installing the libraries!
 #### These libraries may be helpful, depending on which peripherals and sensors you have available and how you communicate with them.
 * [EnviroDIY_GPRSbee](https://github.com/EnviroDIY/GPRSbeeMod/tree/v1.2_hacked) - Communicates with the [GPRSBee](https://www.seeedstudio.com/GPRSbee-rev.-6-p-2445.html#) to send data over cellular network.  This library is an older version of the Sodaq library that has been hacked to work with both rev0.4 and rev0.6 of the GPRSbee.  Further work is required to make the current Sodaq GPRSbee library work on the EnviroDIY Mayfly.
 * [EnviroDIY SDI-12](https://github.com/EnviroDIY/Arduino-SDI-12) - Implements the [SDI-12](https://en.wikipedia.org/wiki/SDI-12) communications protocol that is used by a wide variety of environmental sensors.  _Note that in order to use this library simultaneously with SoftwareSerial or the Sodaq PcInt library you must instead use the SDI-12Mod referenced below._
+* [Adafruit Sensor](https://github.com/adafruit/Adafruit_Sensor) - Adafruit unified sensor library.
 * [Adafruit DHT](https://github.com/adafruit/DHT-sensor-library) - Controls the low cost [DHT](https://www.adafruit.com/products/385) temperature & humidity sensors sold by Adafruit.
 * [Adafruit TSL2561](https://github.com/Adafruit/TSL2561-Arduino-Library/) - Controls the Adafruit [TSL2561](https://www.adafruit.com/products/439) digital luminosity sensor.
 * [SDL SSD1306](https://github.com/switchdoclabs/SDL_Arduino_SSD1306)  - Controls the SwitchDoc Labs Grove [128x64 OLED](http://store.switchdoc.com/grove-128x64-i2c-oled-board-for-arduino-and-raspberry-pi/).
+* [EnviroDIY Modular Sensors](https://github.com/EnviroDIY/ModularSensors) - A class-subclass setup allowing many sensors to be called with the same commands.
 
 #### These libraries are modified versions that are necessary in order to work together on the EnviroDIY Mayfly
 
-The modified versions are necessary because each of these 3 libraries will try to simultaneously monitor all 4 ports on the Mayfly causing conflicts.  They have been cropped to only look at one port each.  The modified versions are only necessary to use two or more of these together.
+The modified versions are necessary because each of these 3 libraries will try to simultaneously monitor all 4 pin change interrupt vectors on the Mayfly causing conflicts.  They have been cropped to only look at one each.  The modified versions are only necessary to use two or more of these together.
 * [EnviroDIY PCIntMod](https://github.com/EnviroDIY/PcIntMod)
 * [EnviroDIY SoftwareSerialMod](https://github.com/EnviroDIY/SoftwareSerialMod)
 * [EnviroDIY SDI-12Mod](https://github.com/EnviroDIY/Arduino-SDI-12/tree/Mayfly)
