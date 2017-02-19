@@ -52,6 +52,10 @@
   {
    "version": "https://github.com/EnviroDIY/ModularSensors.git.git",
    "name": "EnviroDIY_ModularSensors"
+  },
+  {
+   "version": "https://github.com/EnviroDIY/Arduino-SDI-12.git.git#Mayfly",
+   "name": "EnviroDIY_SDI12Mod"
   }
  ],
  "name": "EnviroDIYMayfly",
