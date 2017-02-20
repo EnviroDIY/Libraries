@@ -26,6 +26,7 @@ script:
 - git checkout master
 - git submodule update --remote
 - git-archive-all --force-submodules libraries.zip
+- zip -d libraries "*/.gitattributes" "*/.gitignore" "*/.gitmodules" "*/.github/*" "*.sh"  "*/Doxyfile" "*/platformio.ini" "*/.travis.yml"
 - git add -A
 - git status
 - git commit -m "Updated all libraries and zip (Travis build $TRAVIS_BUILD_NUMBER) [ci skip]"
