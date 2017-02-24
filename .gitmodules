@@ -28,7 +28,7 @@
 	url = http://github.com/switchdoclabs/SDL_Arduino_SSD1306
 	shallow = false
 [submodule "EnviroDIY_SoftwareSerialMod"]
-	path = EnviroDIY_SoftwareSerialMod
+	path = EnviroDIY_SoftwareSerial_PCINT12
 	url = http://github.com/EnviroDIY/SoftwareSerialMod
 	shallow = false
 [submodule "EnviroDIY_PcIntMod"]
