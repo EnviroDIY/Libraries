@@ -32,7 +32,7 @@
 	url = http://github.com/EnviroDIY/SoftwareSerialMod
 	shallow = false
 [submodule "EnviroDIY_PcIntMod"]
-	path = EnviroDIY_PcIntMod
+	path = EnviroDIY_PCInt_PCINT0
 	url = http://github.com/EnviroDIY/PcIntMod
 	shallow = false
 [submodule "Adafruit_Sensor"]
