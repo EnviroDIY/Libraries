@@ -52,7 +52,7 @@
 	url = https://github.com/EnviroDIY/ModularSensors.git
 	shallow = false
 [submodule "EnviroDIY_SDI12Mod"]
-	path = EnviroDIY_SDI12Mod
+	path = EnviroDIY_SDI12_PCINT3
 	url = https://github.com/EnviroDIY/Arduino-SDI-12.git
 	branch = Mayfly
 	shallow = false
