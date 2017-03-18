@@ -25,7 +25,8 @@ script:
 - git remote add origin git@github.com:EnviroDIY/Libraries.git
 - git checkout master
 - git status
-- git submodule update --init --remote
+- git submodule update --init --remote --recursive
+- git add -A
 - git status
 - git-archive-all --force-submodules libraries.zip
 - zip -d libraries "*/.gitattributes" "*/.gitignore" "*/.gitmodules" "*/.github/*" "*.sh"  "*/Doxyfile" "*/platformio.ini" "*/.travis.yml"
