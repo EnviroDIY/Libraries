@@ -24,7 +24,11 @@ script:
 - git remote rm origin
 - git remote add origin git@github.com:EnviroDIY/Libraries.git
 - git checkout master
-- git submodule update --init --remote
+- git status
+- git submodule --init
+- git status
+- git submodule foreach git pull
+- git status
 - git-archive-all --force-submodules libraries.zip
 - zip -d libraries "*/.gitattributes" "*/.gitignore" "*/.gitmodules" "*/.github/*" "*.sh"  "*/Doxyfile" "*/platformio.ini" "*/.travis.yml"
 # - python make_libjson.py
