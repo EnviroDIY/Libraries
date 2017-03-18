@@ -2,7 +2,7 @@ language: python
 python:
 - '2.7'
 git:
-  depth: 3
+  submodules: false
 env:
   global:
   - secure: DPY6geQkH2FZO1PokpoIomX5njSd57zoQxEMpeBKJZxPLfaBmy+ebUwbdWS70Sp5ytcgIcpEoqoPzeb1deK8+srvDgOmnKmda80oB5nAg01s9AN2a2x1wV3eGfB1eyg1i3lV4CoK5FvCCQxSqln6/OpG3x5/DKwNdXdyRtfaxZUC7/UOdx/ccoK8qqAuYx3OW8wVlr5QZi1WfVedHjhT1bJSwJulwNKOciQ3C0oQR2hvQs/9RAF/MNOUg+1YJZy1PwAl7MlOb90HQePrnVHXUFxjWicDI2B9Vhs025NDuvZm9Gq+ferOgiG133JUzWQQ5PeDHCGVqwr2iM/wecjBS9U2soiQ7bbzgvirX3f8bYCL2ShRoF7iMnAR9ApD7Ffn9JJYgrcnHhcn80WpJykzk3kbHhpSEiWz5VspHuhTBlljuRQ91lFi1r2tmVP9TEevPc4ENtKhTepiBI7YTqRvK2cBkTYLOOG87rYAp8L1YpWbrp6du4Z3X8I3T3QBMaveibhR/sHgnNv2ue72FDf96KndDTAaOk6hcRWoeG1BhMsX4kPAqbkpjn2ZXuTtvAdWYDcL9cESmpvMgpcDm6quIgiQkXD935uV0YQjnc1a1NQIRCYJsginQ/F9Mbs/c42gSb2rAF3BL8n8FoLkkKNVgbWSWT8mfiqPMXP8pU/EAu8=
@@ -25,9 +25,7 @@ script:
 - git remote add origin git@github.com:EnviroDIY/Libraries.git
 - git checkout master
 - git status
-- git submodule --init
-- git status
-- git submodule foreach git pull
+- git submodule update --init --remote
 - git status
 - git-archive-all --force-submodules libraries.zip
 - zip -d libraries "*/.gitattributes" "*/.gitignore" "*/.gitmodules" "*/.github/*" "*.sh"  "*/Doxyfile" "*/platformio.ini" "*/.travis.yml"
