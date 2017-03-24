@@ -38,12 +38,12 @@
 [submodule "EnviroDIY_SDI12"]
 	path = EnviroDIY_SDI12
 	url = http://github.com/EnviroDIY/Arduino-SDI-12
-	branch = archive
+	branch = master
 	shallow = false
 [submodule "EnviroDIY_SDI12Mod"]
 	path = EnviroDIY_SDI12_PCINT3
 	url = https://github.com/EnviroDIY/Arduino-SDI-12
-	branch = mf_archive
+	branch = mayfly
 	shallow = false
 [submodule "EnviroDIY_SoftwareSerialMod"]
 	path = EnviroDIY_SoftwareSerial_PCINT12
