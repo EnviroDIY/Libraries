@@ -1,0 +1,72 @@
+{
+ "keywords": "Mayfly, EnviroDIY, Sensors, DS-3231",
+ "dependencies": [
+  {
+   "version": "http://github.com/Adafruit/Adafruit_ADS1X15.git",
+   "name": "Adafruit_ADS1X15"
+  },
+  {
+   "version": "http://github.com/adafruit/DHT-sensor-library.git",
+   "name": "Adafruit_DHT"
+  },
+  {
+   "version": "https://github.com/adafruit/Adafruit_Sensor.git",
+   "name": "Adafruit_Sensor"
+  },
+  {
+   "version": "http://github.com/Adafruit/TSL2561-Arduino-Library.git",
+   "name": "Adafruit_TSL2561"
+  },
+  {
+   "version": "https://github.com/EnviroDIY/Sodaq_DS3231.git",
+   "name": "EnviroDIY_DS3231"
+  },
+  {
+   "version": "http://github.com/EnviroDIY/GPRSBee.git#v1.2_hacked",
+   "name": "EnviroDIY_GPRSBee"
+  },
+  {
+   "version": "https://github.com/EnviroDIY/ModularSensors.git",
+   "name": "EnviroDIY_ModularSensors"
+  },
+  {
+   "version": "http://github.com/EnviroDIY/PcInt_PCINT0.git",
+   "name": "EnviroDIY_PCInt_PCINT0"
+  },
+  {
+   "version": "https://github.com/EnviroDIY/SdFat.git",
+   "name": "EnviroDIY_SdFat"
+  },
+  {
+   "version": "http://github.com/EnviroDIY/Arduino-SDI-12.git#master",
+   "name": "EnviroDIY_SDI12"
+  },
+  {
+   "version": "https://github.com/EnviroDIY/Arduino-SDI-12.git#mayfly",
+   "name": "EnviroDIY_SDI12_PCINT3"
+  },
+  {
+   "version": "http://github.com/EnviroDIY/SoftwareSerial_PCINT12.git",
+   "name": "EnviroDIY_SoftwareSerial_PCINT12"
+  },
+  {
+   "version": "http://github.com/switchdoclabs/SDL_Arduino_SSD1306.git",
+   "name": "SDL_SSD1306"
+  },
+  {
+   "version": "http://github.com/SodaqMoja/Sodaq_PcInt.git",
+   "name": "Sodaq_PcInt"
+  },
+  {
+   "version": "http://github.com/SodaqMoja/RTCTimer.git",
+   "name": "Sodaq_RTCTimer"
+  }
+ ],
+ "name": "EnviroDIYMayfly",
+ "repository": {
+  "url": "https://github.com/EnviroDIY/Libraries.git",
+  "type": "git",
+  "branch": "master"
+ },
+ "description": "A collection of libraries to support the EnviroDIY Mayfly"
+}
