@@ -66,5 +66,5 @@ id_rsa.pub
 id_rsa
 
 # Other
-library.json
-make_libjson.py
+# library.json
+# make_libjson.py
