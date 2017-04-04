@@ -35,3 +35,8 @@ script:
 - git status
 - git commit -m "Updated all libraries and zip (Travis build $TRAVIS_BUILD_NUMBER) [ci skip]"
 - git push origin master
+- git checkout platformio
+- git checkout master -- library.json
+- git add -A
+- git status
+- git commit -m "Updated library.json (Travis build $TRAVIS_BUILD_NUMBER) [ci skip]"

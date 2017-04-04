@@ -1,5 +1,5 @@
 {
- "keywords": "Mayfly, EnviroDIY, Sensors, DS-3231",
+ "keywords": "Mayfly, EnviroDIY, Sensors, DS-3231, Logger, SDI-12",
  "dependencies": [
   {
    "version": "http://github.com/Adafruit/Adafruit_ADS1X15.git",
@@ -66,7 +66,7 @@
  "repository": {
   "url": "https://github.com/EnviroDIY/Libraries.git",
   "type": "git",
-  "branch": "master"
+  "branch": "platformio"
  },
  "description": "A collection of libraries to support the EnviroDIY Mayfly"
 }
