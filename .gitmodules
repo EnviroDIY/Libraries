@@ -31,10 +31,6 @@
 	path = EnviroDIY_PCInt_PCINT0
 	url = http://github.com/EnviroDIY/PcInt_PCINT0
 	shallow = false
-[submodule "EnviroDIY_SdFat"]
-	path = EnviroDIY_SdFat
-	url = https://github.com/EnviroDIY/SdFat
-	shallow = false
 [submodule "EnviroDIY_SDI12"]
 	path = EnviroDIY_SDI12
 	url = http://github.com/EnviroDIY/Arduino-SDI-12
