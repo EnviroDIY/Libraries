@@ -57,3 +57,6 @@
 	path = Sodaq_RTCTimer
 	url = http://github.com/SodaqMoja/RTCTimer
 	shallow = false
+[submodule "SdFat"]
+	path = SdFat
+	url = https://github.com/greiman/SdFat
