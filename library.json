@@ -56,6 +56,10 @@
   {
    "version": "http://github.com/SodaqMoja/RTCTimer.git",
    "name": "Sodaq_RTCTimer"
+  },
+  {
+   "version": "https://github.com/greiman/SdFat.git",
+   "name": "SdFat"
   }
  ],
  "name": "EnviroDIYMayfly",
