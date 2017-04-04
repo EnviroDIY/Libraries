@@ -9,7 +9,12 @@ import json
 library = {"name": "EnviroDIYMayfly",
            "description": "A collection of libraries to support the EnviroDIY Mayfly",
            "keywords": "Mayfly, EnviroDIY, Sensors, DS-3231, Logger, SDI-12",
-           "repository": {"type": "git", "url": "https://github.com/EnviroDIY/Libraries.git", "branch": "platformio"}
+           "repository": {"type": "git", "url": "https://github.com/EnviroDIY/Libraries.git", "branch": "platformio"},
+           "export": {"exclude": ["*/.gitattributes", "*/.gitignore", "*/.travis.yml",
+                                  "*/.gitmodules", "*id_rsa.enc", "*/platformio.ini",
+                                  "*/*.sh", "*/make-zip.sh", "*/Doxyfile", "*/.git/*",
+                                  "*/.github/*"]
+                     }
            }
 
 dependencies = []
@@ -19,6 +24,8 @@ with open('.gitmodules','r') as submods:
             dep = {'name': line.split()[2]}
         if line.split()[0] == "url":
             url = line.split()[2] + ".git"
+            if url == "https://github.com/greiman/SdFat.git":
+                url = "https://github.com/EnviroDIY/SdFat.git"
             dep['version'] = url
         if line.split()[0] == "branch":
             url += "#" + line.split()[2]
