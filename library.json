@@ -34,10 +34,6 @@
    "name": "EnviroDIY_PCInt_PCINT0"
   },
   {
-   "version": "https://github.com/EnviroDIY/SdFat.git",
-   "name": "EnviroDIY_SdFat"
-  },
-  {
    "version": "http://github.com/EnviroDIY/Arduino-SDI-12.git#master",
    "name": "EnviroDIY_SDI12"
   },
