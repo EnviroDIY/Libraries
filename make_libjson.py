@@ -8,8 +8,8 @@ import json
 
 library = {"name": "EnviroDIYMayfly",
            "description": "A collection of libraries to support the EnviroDIY Mayfly",
-           "keywords": "Mayfly, EnviroDIY, Sensors, DS-3231",
-           "repository": {"type": "git", "url": "https://github.com/EnviroDIY/Libraries.git", "branch": "master"}
+           "keywords": "Mayfly, EnviroDIY, Sensors, DS-3231, Logger, SDI-12",
+           "repository": {"type": "git", "url": "https://github.com/EnviroDIY/Libraries.git", "branch": "platformio"}
            }
 
 dependencies = []
@@ -34,4 +34,3 @@ library['dependencies'] = dependencies
 jsonfile = open('library.json', 'w')
 json.dump(library, jsonfile, indent=1, separators=(',', ': '))
 jsonfile.close()
-
