@@ -63,7 +63,6 @@
    "name": "Sodaq_RTCTimer"
   },
   {
-   "version": "https://github.com/EnviroDIY/SdFat.git",
    "name": "SdFat"
   }
  ],
