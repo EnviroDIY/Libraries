@@ -24,12 +24,12 @@ with open('.gitmodules','r') as submods:
             dep = {'name': line.split()[2]}
         if line.split()[0] == "url":
             url = line.split()[2] + ".git"
-            if url == "https://github.com/greiman/SdFat.git":
-                url = "https://github.com/EnviroDIY/SdFat.git"
-            dep['version'] = url
+            if url != "https://github.com/greiman/SdFat.git":
+                dep['version'] = url
         if line.split()[0] == "branch":
             url += "#" + line.split()[2]
-            dep['version'] = url
+            if url != "https://github.com/greiman/SdFat.git":
+                dep['version'] = url
         if (line.split()[0] == "[submodule") and num != 1:
             dependencies.append(dep)
     else:
