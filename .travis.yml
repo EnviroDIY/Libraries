@@ -41,5 +41,9 @@ script:
 - git checkout platformio
 - git checkout master -- library.json
 - git add library.json
-- if [[git diff --exit-code -- library.json]]; then git commit -m "Updated library.json (Travis build $TRAVIS_BUILD_NUMBER) [ci skip]"; fi
+- is_changed=$(git diff --exit-code HEAD -- library.json)
+- echo $is_changed
+- if [[ $is_changed > 0 ]];
+    then git commit -m "Updated library.json (Travis build $TRAVIS_BUILD_NUMBER) [ci skip]";
+  fi
 - git push origin platformio
