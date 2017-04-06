@@ -60,3 +60,6 @@
 [submodule "SdFat"]
 	path = SdFat
 	url = https://github.com/greiman/SdFat
+[submodule "TinyGSM"]
+	path = TinyGSM
+	url = https://github.com/EnviroDIY/TinyGSM.git
