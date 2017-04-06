@@ -64,6 +64,10 @@
   },
   {
    "name": "SdFat"
+  },
+  {
+   "version": "https://github.com/EnviroDIY/TinyGSM.git.git",
+   "name": "TinyGSM"
   }
  ],
  "export": {
