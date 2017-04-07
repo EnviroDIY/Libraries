@@ -68,6 +68,14 @@
   {
    "version": "https://github.com/EnviroDIY/TinyGSM.git.git",
    "name": "TinyGSM"
+  },
+  {
+   "version": "https://github.com/milesburton/Arduino-Temperature-Control-Library.git.git",
+   "name": "DallasTemperature"
+  },
+  {
+   "version": "https://github.com/PaulStoffregen/OneWire.git.git",
+   "name": "OneWire"
   }
  ],
  "export": {
