@@ -66,15 +66,15 @@
    "name": "SdFat"
   },
   {
-   "version": "https://github.com/EnviroDIY/TinyGSM.git.git",
+   "version": "https://github.com/EnviroDIY/TinyGSM.git",
    "name": "TinyGSM"
   },
   {
-   "version": "https://github.com/milesburton/Arduino-Temperature-Control-Library.git.git",
+   "version": "https://github.com/milesburton/Arduino-Temperature-Control-Library.git",
    "name": "DallasTemperature"
   },
   {
-   "version": "https://github.com/PaulStoffregen/OneWire.git.git",
+   "version": "https://github.com/PaulStoffregen/OneWire.git",
    "name": "OneWire"
   }
  ],
