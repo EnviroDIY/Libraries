@@ -62,10 +62,10 @@
 	url = https://github.com/greiman/SdFat
 [submodule "TinyGSM"]
 	path = TinyGSM
-	url = https://github.com/EnviroDIY/TinyGSM.git
+	url = https://github.com/EnviroDIY/TinyGSM
 [submodule "DallasTemperature"]
 	path = DallasTemperature
-	url = https://github.com/milesburton/Arduino-Temperature-Control-Library.git
+	url = https://github.com/milesburton/Arduino-Temperature-Control-Library
 [submodule "OneWire"]
 	path = OneWire
-	url = https://github.com/PaulStoffregen/OneWire.git
+	url = https://github.com/PaulStoffregen/OneWire
