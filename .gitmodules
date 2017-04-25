@@ -69,3 +69,6 @@
 [submodule "OneWire"]
 	path = OneWire
 	url = https://github.com/PaulStoffregen/OneWire
+[submodule "Adafruit_AM2315"]
+	path = Adafruit_AM2315
+	url = https://github.com/adafruit/Adafruit_AM2315.git
