@@ -76,6 +76,10 @@
   {
    "version": "https://github.com/PaulStoffregen/OneWire.git",
    "name": "OneWire"
+  },
+  {
+   "version": "https://github.com/adafruit/Adafruit_AM2315.git.git",
+   "name": "Adafruit_AM2315"
   }
  ],
  "export": {
