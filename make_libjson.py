@@ -24,7 +24,7 @@ with open('.gitmodules','r') as submods:
             dep = {'name': line.split()[2]}
         if line.split()[0] == "url":
             url = line.split()[2]
-            if not url.endsWith(".git")
+            if not url.endsWith(".git"):
                 url += ".git"
             if url != "https://github.com/greiman/SdFat.git":
                 dep['version'] = url
