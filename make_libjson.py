@@ -23,7 +23,9 @@ with open('.gitmodules','r') as submods:
         if line.split()[0] == "path":
             dep = {'name': line.split()[2]}
         if line.split()[0] == "url":
-            url = line.split()[2] + ".git"
+            url = line.split()[2]
+            if !(url.endsWith(".git"))
+                url += ".git"
             if url != "https://github.com/greiman/SdFat.git":
                 dep['version'] = url
         if line.split()[0] == "branch":
