@@ -78,7 +78,7 @@
    "name": "OneWire"
   },
   {
-   "version": "https://github.com/adafruit/Adafruit_AM2315.git.git",
+   "version": "https://github.com/adafruit/Adafruit_AM2315.git",
    "name": "Adafruit_AM2315"
   }
  ],
