@@ -72,3 +72,6 @@
 [submodule "Adafruit_AM2315"]
 	path = Adafruit_AM2315
 	url = https://github.com/adafruit/Adafruit_AM2315.git
+[submodule "Adafruit_BME280"]
+	path = Adafruit_BME280
+	url = https://github.com/adafruit/Adafruit_BME280_Library.git
