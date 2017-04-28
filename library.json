@@ -80,6 +80,10 @@
   {
    "version": "https://github.com/adafruit/Adafruit_AM2315.git",
    "name": "Adafruit_AM2315"
+  },
+  {
+   "version": "https://github.com/adafruit/Adafruit_BME280_Library.git",
+   "name": "Adafruit_BME280"
   }
  ],
  "export": {
