@@ -26,8 +26,10 @@ with open('.gitmodules','r') as submods:
             url = line.split()[2]
             if not url.endswith(".git"):
                 url += ".git"
+            dep['version'] = url
         if line.split()[0] == "branch":
             url += "#" + line.split()[2]
+            dep['version'] = url
         if (line.split()[0] == "[submodule") and num != 1:
             dependencies.append(dep)
     else:
