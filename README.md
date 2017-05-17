@@ -5,11 +5,11 @@ Please let us know if you have any trouble installing the libraries!
 
 ### Installing Libraries in the [Arduino.cc IDE](https://www.arduino.cc/en/Main/Software):
 
-The simplest way to use these libraries is to right-click on the file "libraries.zip", select "save link as", and save the file somewhere on your computer.  In your the Arduino Software (IDE), import that zip file following the instructions for "Manual Installation" from https://www.arduino.cc/en/Guide/Libraries.  To update the libraries, you will need to re-download the zip file and overwrite the folders.
+The simplest way to use these libraries is to right-click on this carefully crafted **[link](https://github.com/EnviroDIY/Libraries/blob/master/libraries.zip?raw=true)**, select "save link as", and save the file somewhere on your computer.  You can also click on "libraries.zip" in the file list above and then click the grey download button on that page to download the zip.  In your the Arduino Software (IDE), import that zip file following the instructions for _"Manual Installation"_ from https://www.arduino.cc/en/Guide/Libraries#toc5.  You _cannot_ directly import the zip using the Arduino Library Manager because it contains multiple libraries.  To update the libraries, you will need to re-download the zip file and overwrite the folders.
 
 Please _**DO NOT**_ to use the green "Clone or Download" button to try to download a zip file.  The zip downloaded that way will only contain empty folders instead of the libraries themselves.
 
-If you prefer and are familiar with Git, clone this repo into your Arduino\libraries folder.  The libraries should then be accessible to the Arduino Software (IDE).  Each library can also be downloaded individually by clicking on that library and then downloading a ZIP of only that library.
+If you prefer, and are familiar with Git, clone this repo into your Arduino\libraries folder.  The libraries should then be accessible to the Arduino Software (IDE).  Each library can also be downloaded individually by clicking on that library and then downloading a ZIP of only that library.
 
 ### Installing Libraries in [PlatformIO](http://platformio.org/):
 
