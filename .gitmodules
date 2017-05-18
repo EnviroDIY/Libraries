@@ -1,62 +1,48 @@
 [submodule "Adafruit_ADS1X15"]
 	path = Adafruit_ADS1X15
 	url = http://github.com/Adafruit/Adafruit_ADS1X15
-	shallow = false
 [submodule "Adafruit_DHT"]
 	path = Adafruit_DHT
 	url = http://github.com/adafruit/DHT-sensor-library
-	shallow = false
 [submodule "Adafruit_Sensor"]
 	path = Adafruit_Sensor
 	url = https://github.com/adafruit/Adafruit_Sensor
-	shallow = false
 [submodule "Adafruit_TSL2561"]
 	path = Adafruit_TSL2561
 	url = http://github.com/Adafruit/TSL2561-Arduino-Library
-	shallow = false
 [submodule "EnviroDIY_DS3231"]
 	path = EnviroDIY_DS3231
 	url = https://github.com/EnviroDIY/Sodaq_DS3231
-	shallow = false
 [submodule "EnviroDIY_GPRSBee"]
 	path = EnviroDIY_GPRSBee
 	url = http://github.com/EnviroDIY/GPRSBee
 	branch = v1.2_hacked
-	shallow = false
 [submodule "EnviroDIY_ModularSensors"]
 	path = EnviroDIY_ModularSensors
 	url = https://github.com/EnviroDIY/ModularSensors
-	shallow = false
 [submodule "EnviroDIY_PcIntMod"]
 	path = EnviroDIY_PCInt_PCINT0
 	url = http://github.com/EnviroDIY/PcInt_PCINT0
-	shallow = false
 [submodule "EnviroDIY_SDI12"]
 	path = EnviroDIY_SDI12
 	url = http://github.com/EnviroDIY/Arduino-SDI-12
 	branch = master
-	shallow = false
 [submodule "EnviroDIY_SDI12Mod"]
 	path = EnviroDIY_SDI12_PCINT3
 	url = https://github.com/EnviroDIY/Arduino-SDI-12
 	branch = mayfly
-	shallow = false
 [submodule "EnviroDIY_SoftwareSerialMod"]
 	path = EnviroDIY_SoftwareSerial_PCINT12
 	url = http://github.com/EnviroDIY/SoftwareSerial_PCINT12
-	shallow = false
 [submodule "SDL_SSD1306"]
 	path = SDL_SSD1306
 	url = http://github.com/switchdoclabs/SDL_Arduino_SSD1306
-	shallow = false
 [submodule "Sodaq_PcInt"]
 	path = Sodaq_PcInt
 	url = http://github.com/SodaqMoja/Sodaq_PcInt
-	shallow = false
 [submodule "Sodaq_RTCTimer"]
 	path = Sodaq_RTCTimer
 	url = http://github.com/SodaqMoja/RTCTimer
-	shallow = false
 [submodule "SdFat"]
 	path = SdFat
 	url = https://github.com/greiman/SdFat
@@ -75,3 +61,13 @@
 [submodule "Adafruit_BME280"]
 	path = Adafruit_BME280
 	url = https://github.com/adafruit/Adafruit_BME280_Library.git
+[submodule "EnviroDIY_SoftwareSerial_ExtInts"]
+	path = EnviroDIY_SoftwareSerial_ExtInts
+	url = https://github.com/EnviroDIY/SoftwaterSerial_ExternalInts.git
+[submodule "EnableInterrupt"]
+	path = EnableInterrupt
+	url = https://github.com/EnviroDIY/EnableInterrupt.git
+[submodule "EnviroDIY_SDI12_ExtInts"]
+	path = EnviroDIY_SDI12_ExtInts
+	url = https://github.com/EnviroDIY/Arduino-SDI-12.git
+	branch = ExtInts
