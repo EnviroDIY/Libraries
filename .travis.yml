@@ -26,6 +26,7 @@ script:
 - git submodule update --init --remote --recursive
 - git-archive-all --force-submodules libraries.zip
 - zip -d -q libraries "*/.gitattributes" "*/.gitignore" "*/.gitmodules" "*/.github/*" "*.sh"  "*/Doxyfile" "*/platformio.ini" "*/.travis.yml"
+- zip -d -q libraries "*/doc/*.pdf"
 - python make_libjson.py
 - git add -A
 - git status
