@@ -53,11 +53,11 @@ To update all libraries, run the command:
 
 #### These libraries are modified versions that are necessary in order to work together
 
-These modified versions are necessary because each of these libraries will try to simultaneously monitor all pin change interrupt vectors on any Arduino board causing compiler errors.  Instead of allowing them to handle interrupts on their own, these have been stripped of interrupt vector control and require and external pin change interrupt to set up their interrupts for them.  The modified versions are only necessary to use two or more of these together.  Any pin that supports pin change interrupts can be used with these libraries, provided that you use [EnableInterrupt](https://github.com/EnviroDIY/EnableInterrupt) or another library to allow them interrupt control.
+These modified versions are necessary because each of these libraries will try to simultaneously monitor all pin change interrupt vectors on any Arduino board causing compiler errors.  Instead of allowing them to handle interrupts on their own, these have been stripped of interrupt vector control and require and external pin change interrupt to set up their interrupts for them.  The modified versions are only necessary to use two or more of these together.  Any pin that supports pin change interrupts can be used with these libraries, provided that you use [EnableInterrupt](https://github.com/EnviroDIY/EnableInterrupt) or another library to allow them interrupt control.  These can also be used with other AVR boards (including the Arduino Uno, Mega, or Leonardo).
 * [EnviroDIY SoftwaterSerial_ExtInts](https://github.com/EnviroDIY/SoftwaterSerial_ExternalInts)
 * [EnviroDIY SDI-12_ExtInts](https://github.com/EnviroDIY/Arduino-SDI-12/tree/ExtInts)
 
-Instead of being controlled by an alternate library, these versions hhey have been cropped to only look at only one interrupt vector each. This means they are each only able to operate on the specified pins rather than any pin that supports pin change interrupts.
-* [EnviroDIY PCInt_PCINT0](https://github.com/EnviroDIY/PcIntMod)
-* [EnviroDIY SoftwareSerial_PCINT12](https://github.com/EnviroDIY/SoftwareSerialMod)
-* [EnviroDIY SDI-12_PCINT3](https://github.com/EnviroDIY/Arduino-SDI-12/tree/Mayfly)
+Instead of being controlled by an alternate library, these versions have been cropped to only look at only one interrupt vector each. This means they are each only able to operate on the specified pins rather than any pin that supports pin change interrupts.  These will only work together with the listed pin numbers on the EnviroDIY Mayfly itself.
+* [EnviroDIY PCInt_PCINT0](https://github.com/EnviroDIY/PcIntMod) - Will only work on pins D24-D31 (A00-A07)
+* [EnviroDIY SoftwareSerial_PCINT12](https://github.com/EnviroDIY/SoftwareSerialMod) - Will only work on pins D8-D23
+* [EnviroDIY SDI-12_PCINT3](https://github.com/EnviroDIY/Arduino-SDI-12/tree/Mayfly) - Will only work on pins D0-D7
