@@ -63,7 +63,7 @@
 	url = https://github.com/adafruit/Adafruit_BME280_Library.git
 [submodule "EnviroDIY_SoftwareSerial_ExtInts"]
 	path = EnviroDIY_SoftwareSerial_ExtInts
-	url = https://github.com/EnviroDIY/SoftwaterSerial_ExternalInts.git
+	url = https://github.com/EnviroDIY/SoftwareSerial_ExternalInts.git
 [submodule "EnableInterrupt"]
 	path = EnableInterrupt
 	url = https://github.com/EnviroDIY/EnableInterrupt.git
