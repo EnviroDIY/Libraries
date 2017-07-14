@@ -87,7 +87,7 @@
    "name": "Adafruit_BME280"
   },
   {
-   "version": "https://github.com/EnviroDIY/SoftwaterSerial_ExternalInts.git",
+   "version": "https://github.com/EnviroDIY/SoftwareSerial_ExternalInts.git",
    "name": "EnviroDIY_SoftwareSerial_ExtInts"
   },
   {
