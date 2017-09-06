@@ -74,3 +74,9 @@
 [submodule "RTCZero"]
 	path = RTCZero
 	url = https://github.com/arduino-libraries/RTCZero
+[submodule "SensorModbusMaster"]
+	path = SensorModbusMaster
+	url = https://github.com/EnviroDIY/SensorModbusMaster
+[submodule "YosemitechModbus"]
+	path = YosemitechModbus
+	url = https://github.com/EnviroDIY/YosemitechModbus
