@@ -101,6 +101,14 @@
   {
    "version": "https://github.com/arduino-libraries/RTCZero.git",
    "name": "RTCZero"
+  },
+  {
+   "version": "https://github.com/EnviroDIY/SensorModbusMaster.git",
+   "name": "SensorModbusMaster"
+  },
+  {
+   "version": "https://github.com/EnviroDIY/YosemitechModbus.git",
+   "name": "YosemitechModbus"
   }
  ],
  "export": {
