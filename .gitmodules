@@ -64,9 +64,6 @@
 [submodule "EnviroDIY_SoftwareSerial_ExtInts"]
 	path = EnviroDIY_SoftwareSerial_ExtInts
 	url = https://github.com/EnviroDIY/SoftwareSerial_ExternalInts.git
-[submodule "EnableInterrupt"]
-	path = EnableInterrupt
-	url = https://github.com/EnviroDIY/EnableInterrupt.git
 [submodule "EnviroDIY_SDI12_ExtInts"]
 	path = EnviroDIY_SDI12_ExtInts
 	url = https://github.com/EnviroDIY/Arduino-SDI-12.git
