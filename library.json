@@ -105,6 +105,10 @@
   {
    "version": "https://github.com/EnviroDIY/YosemitechModbus.git",
    "name": "YosemitechModbus"
+  },
+  {
+   "version": "https://github.com/GreyGnome/EnableInterrupt.git",
+   "name": "EnableInterrupt"
   }
  ],
  "export": {
