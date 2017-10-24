@@ -9,22 +9,26 @@
   {
    "note": "TI ADS1X15 ADC Library by Adafruit",
    "url": "http://github.com/Adafruit/Adafruit_ADS1X15.git",
-   "name": "342"
+   "name": "Adafruit ADS1X15",
+   "library id": "342"
   },
   {
    "note": "AOSong DHT Sensor Library by Adafruit",
    "url": "http://github.com/adafruit/DHT-sensor-library.git",
-   "name": "19"
+   "name": "DHT sensor library",
+   "library id": "19"
   },
   {
    "note": "Adafruit Unified Sensor Library",
    "url": "https://github.com/adafruit/Adafruit_Sensor.git",
-   "name": "31"
+   "name": "Adafruit Unified Sensor",
+   "library id": "31"
   },
   {
    "note": "TAOS TSL2561 Luminosity Sensor Library by Adafruit",
    "url": "http://github.com/Adafruit/TSL2561-Arduino-Library.git",
-   "name": "34"
+   "name": "Adafruit TSL2561",
+   "library id": "34"
   },
   {
    "version": "https://github.com/EnviroDIY/Sodaq_DS3231.git",
@@ -45,7 +49,8 @@
   {
    "note": "EnviroDIY SDI-12 Library",
    "url": "http://github.com/EnviroDIY/Arduino-SDI-12.git",
-   "name": "1486"
+   "name": "Arduino-SDI-12",
+   "library id": "1486"
   },
   {
    "version": "https://github.com/EnviroDIY/Arduino-SDI-12.git#mayfly",
@@ -62,17 +67,20 @@
   {
    "note": "Sodaq Pin Change Interrupt Library",
    "url": "http://github.com/SodaqMoja/Sodaq_PcInt.git",
-   "name": "695"
+   "name": "Sodaq_PcInt",
+   "library id": "695"
   },
   {
    "note": "Sodaq Real Time Clock (RTC) Timer Library ",
    "url": "http://github.com/SodaqMoja/RTCTimer.git",
-   "name": "645"
+   "name": "RTCTimer",
+   "library id": "645"
   },
   {
    "note": "SdFat",
    "url": "https://github.com/greiman/SdFat.git",
-   "name": "322"
+   "name": "SdFat",
+   "library id": "322"
   },
   {
    "version": "https://github.com/EnviroDIY/TinyGSM.git",
@@ -81,22 +89,26 @@
   {
    "note": "DallasTemperature",
    "url": "https://github.com/milesburton/Arduino-Temperature-Control-Library.git",
-   "name": "54"
+   "name": "DallasTemperature",
+   "library id": "54"
   },
   {
    "note": "OneWire",
    "url": "https://github.com/PaulStoffregen/OneWire.git",
-   "name": "1"
+   "name": "OneWire",
+   "library id": "1"
   },
   {
    "note": "AOSong AM2315 I2C Temp/Humidity Sensor Library by Adafruit",
    "url": "https://github.com/adafruit/Adafruit_AM2315.git",
-   "name": "166"
+   "name": "Adafruit AM2315",
+   "library id": "773"
   },
   {
    "note": "Bosch BME280 Temp/Humidity/Pressure Sensor Library by Adafruit",
    "url": "https://github.com/adafruit/Adafruit_BME280_Library.git",
-   "name": "773"
+   "name": "Adafruit BME280 Library",
+   "library id": "166"
   },
   {
    "version": "https://github.com/EnviroDIY/SoftwareSerial_ExternalInts.git",
@@ -109,12 +121,14 @@
   {
    "note": "RTCZero",
    "url": "https://github.com/arduino-libraries/RTCZero.git",
-   "name": "873"
+   "name": "RTCZero",
+   "library id": "873"
   },
   {
    "note": "EnviroDIY SensorModbusMaster",
    "url": "https://github.com/EnviroDIY/SensorModbusMaster.git",
-   "name": "1824"
+   "name": "SensorModbusMaster",
+   "library id": "1824"
   },
   {
    "version": "https://github.com/EnviroDIY/YosemitechModbus.git",
