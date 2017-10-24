@@ -98,8 +98,6 @@ with open('.gitmodules','r') as submods:
                 dep['url'] = dep.pop('version')
 
         if (line.split()[0] == "[submodule") and num != 1:
-            print num
-            print dep
             dependencies.append(dep)
             dep = {}
 submods.close()

@@ -19,6 +19,8 @@ before_install:
 - git config --global push.default simple
 - git remote rm origin
 - git remote add origin git@github.com:EnviroDIY/Libraries.git
+- git fetch --all
+- git checkout master
 - git submodule update --init --remote --recursive
 install:
 - pip install git-archive-all
