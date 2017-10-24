@@ -37,64 +37,72 @@ with open('.gitmodules','r') as submods:
         # Fix up dependencies that are part of the PlatformIO index
         if 'name' in dep and 'version' in dep:
             if dep['name'] == 'Adafruit_ADS1X15':
+                dep['name'] = 'Adafruit ADS1X15'
                 dep['note'] = 'TI ADS1X15 ADC Library by Adafruit'
-                dep['name'] = '342'
+                dep['library id'] = '342'
                 dep['url'] = dep.pop('version')
             if dep['name'] == 'Adafruit_DHT':
+                dep['name'] = 'DHT sensor library'
                 dep['note'] = 'AOSong DHT Sensor Library by Adafruit'
-                dep['name'] = '19'
+                dep['library id'] = '19'
                 dep['url'] = dep.pop('version')
             if dep['name'] == 'Adafruit_Sensor':
+                dep['name'] = 'Adafruit Unified Sensor'
                 dep['note'] = 'Adafruit Unified Sensor Library'
-                dep['name'] = '31'
+                dep['library id'] = '31'
                 dep['url'] = dep.pop('version')
             if dep['name'] == 'Adafruit_TSL2561':
+                dep['name'] = 'Adafruit TSL2561'
                 dep['note'] = 'TAOS TSL2561 Luminosity Sensor Library by Adafruit'
-                dep['name'] = '34'
+                dep['library id'] = '34'
                 dep['url'] = dep.pop('version')
             if dep['name'] == 'Adafruit_AM2315':
+                dep['name'] = 'Adafruit AM2315'
                 dep['note'] = 'AOSong AM2315 I2C Temp/Humidity Sensor Library by Adafruit'
-                dep['name'] = '166'
+                dep['library id'] = '773'
                 dep['url'] = dep.pop('version')
             if dep['name'] == 'Adafruit_BME280':
+                dep['name'] = 'Adafruit BME280 Library'
                 dep['note'] = 'Bosch BME280 Temp/Humidity/Pressure Sensor Library by Adafruit'
-                dep['name'] = '773'
+                dep['library id'] = '166'
                 dep['url'] = dep.pop('version')
             if dep['name'] == 'EnviroDIY_SDI12':
+                dep['name'] = 'Arduino-SDI-12'
                 dep['note'] = 'EnviroDIY SDI-12 Library'
-                dep['name'] = '1486'
+                dep['library id'] = '1486'
                 dep['url'] = dep.pop('version')
             if dep['name'] == 'Sodaq_PcInt':
                 dep['note'] = 'Sodaq Pin Change Interrupt Library'
-                dep['name'] = '695'
+                dep['library id'] = '695'
                 dep['url'] = dep.pop('version')
             if dep['name'] == 'Sodaq_RTCTimer':
+                dep['name'] = 'RTCTimer'
                 dep['note'] = 'Sodaq Real Time Clock (RTC) Timer Library '
-                dep['name'] = '645'
+                dep['library id'] = '645'
                 dep['url'] = dep.pop('version')
             if dep['name'] == 'SdFat':
                 dep['note'] = 'SdFat'
-                dep['name'] = '322'
+                dep['library id'] = '322'
                 dep['url'] = dep.pop('version')
             if dep['name'] == 'OneWire':
                 dep['note'] = 'OneWire'
-                dep['name'] = '1'
+                dep['library id'] = '1'
                 dep['url'] = dep.pop('version')
             if dep['name'] == 'DallasTemperature':
                 dep['note'] = 'DallasTemperature'
-                dep['name'] = '54'
+                dep['library id'] = '54'
                 dep['url'] = dep.pop('version')
             if dep['name'] == 'RTCZero':
                 dep['note'] = 'RTCZero'
-                dep['name'] = '873'
+                dep['library id'] = '873'
                 dep['url'] = dep.pop('version')
             if dep['name'] == 'SensorModbusMaster':
                 dep['note'] = 'EnviroDIY SensorModbusMaster'
-                dep['name'] = '1824'
+                dep['library id'] = '1824'
                 dep['url'] = dep.pop('version')
             if dep['name'] == 'EnableInterrupt':
                 dep['note'] = 'GreyGnome\'s EnableInterrupt'
-                dep['name'] = '311'
+                dep['library id'] = '311'
                 dep['url'] = dep.pop('version')
 
         if (line.split()[0] == "[submodule") and num != 1:
