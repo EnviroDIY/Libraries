@@ -19,11 +19,11 @@ The library manager in PlatformIO is far superior to anything in the [Arduino.cc
 
 To install the entire collection on PlatformIO enter this command into the terminal:
 
-`pio lib -g install https://github.com/EnviroDIY/Libraries.git#platformio.`
+`pio lib -g install https://github.com/EnviroDIY/Libraries.git#platformio`
 
 To update all libraries, run the command:
 
-`pio lib -g update.`
+`pio lib -g update`
 
 ## Included Libraries
 
