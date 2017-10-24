@@ -108,6 +108,8 @@ with open('.gitmodules','r') as submods:
         if (line.split()[0] == "[submodule") and num != 1:
             dependencies.append(dep)
             dep = {}
+    else:
+        dependencies.append(dep)
 submods.close()
 
 library['dependencies'] = dependencies
