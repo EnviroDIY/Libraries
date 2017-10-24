@@ -133,6 +133,12 @@
   {
    "version": "https://github.com/EnviroDIY/YosemitechModbus.git",
    "name": "YosemitechModbus"
+  },
+  {
+   "note": "GreyGnome's EnableInterrupt",
+   "url": "https://github.com/GreyGnome/EnableInterrupt.git",
+   "name": "EnableInterrupt",
+   "library id": "311"
   }
  ],
  "export": {
