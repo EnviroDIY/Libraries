@@ -3,8 +3,8 @@ sudo: enabled
 dist: precise
 python:
 - '2.7'
-#git:
-#  submodules: false
+git:
+ submodules: false
 env:
   global:
   - secure: DPY6geQkH2FZO1PokpoIomX5njSd57zoQxEMpeBKJZxPLfaBmy+ebUwbdWS70Sp5ytcgIcpEoqoPzeb1deK8+srvDgOmnKmda80oB5nAg01s9AN2a2x1wV3eGfB1eyg1i3lV4CoK5FvCCQxSqln6/OpG3x5/DKwNdXdyRtfaxZUC7/UOdx/ccoK8qqAuYx3OW8wVlr5QZi1WfVedHjhT1bJSwJulwNKOciQ3C0oQR2hvQs/9RAF/MNOUg+1YJZy1PwAl7MlOb90HQePrnVHXUFxjWicDI2B9Vhs025NDuvZm9Gq+ferOgiG133JUzWQQ5PeDHCGVqwr2iM/wecjBS9U2soiQ7bbzgvirX3f8bYCL2ShRoF7iMnAR9ApD7Ffn9JJYgrcnHhcn80WpJykzk3kbHhpSEiWz5VspHuhTBlljuRQ91lFi1r2tmVP9TEevPc4ENtKhTepiBI7YTqRvK2cBkTYLOOG87rYAp8L1YpWbrp6du4Z3X8I3T3QBMaveibhR/sHgnNv2ue72FDf96KndDTAaOk6hcRWoeG1BhMsX4kPAqbkpjn2ZXuTtvAdWYDcL9cESmpvMgpcDm6quIgiQkXD935uV0YQjnc1a1NQIRCYJsginQ/F9Mbs/c42gSb2rAF3BL8n8FoLkkKNVgbWSWT8mfiqPMXP8pU/EAu8=
@@ -17,22 +17,19 @@ before_install:
 - git config --global user.email "sdamiano@stroudcenter.org"
 - git config --global user.name "SRGDamia1"
 - git config --global push.default simple
+- git remote rm origin
+- git remote add origin git@github.com:EnviroDIY/Libraries.git
+- git submodule update --init --remote --recursive
 install:
 - pip install git-archive-all
 script:
-- git clone git@github.com:EnviroDIY/Libraries.git envirodiylib
-- cd envirodiylib
-- git remote rm origin
-- git remote add origin git@github.com:EnviroDIY/Libraries.git
-- git fetch --all
-- git submodule update --init --remote --recursive
 - git-archive-all --force-submodules libraries.zip
 - zip -d -q libraries "*/.gitattributes" "*/.gitignore" "*/.gitmodules" "*/.github/*" "*.sh"  "*/Doxyfile" "*/platformio.ini" "*/.travis.yml"
 - zip -d -q libraries "*/doc/*.pdf"
 - python make_libjson.py
 - git add -A
 - git status
-- git commit -m "Updated all libraries and zip (Travis build $TRAVIS_BUILD_NUMBER) [ci skip]"
+- git commit -m "Updated zip (Travis build $TRAVIS_BUILD_NUMBER) [ci skip]"
 - git push origin master
 - git checkout platformio
 - git checkout master -- library.json
