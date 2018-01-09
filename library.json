@@ -7,28 +7,40 @@
  },
  "dependencies": [
   {
-   "note": "TI ADS1X15 ADC Library by Adafruit",
-   "url": "http://github.com/Adafruit/Adafruit_ADS1X15.git",
    "name": "Adafruit ADS1X15",
-   "library id": "342"
+   "library id": "342",
+   "url": "http://github.com/Adafruit/Adafruit_ADS1X15.git",
+   "note": "TI ADS1X15 ADC Library by Adafruit",
+   "authors": [
+    "Adafruit"
+   ]
   },
   {
-   "note": "AOSong DHT Sensor Library by Adafruit",
-   "url": "http://github.com/adafruit/DHT-sensor-library.git",
    "name": "DHT sensor library",
-   "library id": "19"
+   "library id": "19",
+   "url": "http://github.com/adafruit/DHT-sensor-library.git",
+   "note": "AOSong DHT Sensor Library by Adafruit",
+   "authors": [
+    "Adafruit"
+   ]
   },
   {
-   "note": "Adafruit Unified Sensor Library",
-   "url": "https://github.com/adafruit/Adafruit_Sensor.git",
    "name": "Adafruit Unified Sensor",
-   "library id": "31"
+   "library id": "31",
+   "url": "https://github.com/adafruit/Adafruit_Sensor.git",
+   "note": "Adafruit Unified Sensor Library",
+   "authors": [
+    "Adafruit"
+   ]
   },
   {
-   "note": "TAOS TSL2561 Luminosity Sensor Library by Adafruit",
-   "url": "http://github.com/Adafruit/TSL2561-Arduino-Library.git",
    "name": "Adafruit TSL2561",
-   "library id": "34"
+   "library id": "34",
+   "url": "http://github.com/Adafruit/TSL2561-Arduino-Library.git",
+   "note": "TAOS TSL2561 Luminosity Sensor Library by Adafruit",
+   "authors": [
+    "Adafruit"
+   ]
   },
   {
    "version": "https://github.com/EnviroDIY/Sodaq_DS3231.git",
@@ -39,18 +51,29 @@
    "name": "EnviroDIY_GPRSBee"
   },
   {
-   "version": "https://github.com/EnviroDIY/ModularSensors.git",
-   "name": "EnviroDIY_ModularSensors"
+   "name": "EnviroDIY_ModularSensors",
+   "library id": "1648",
+   "url": "https://github.com/EnviroDIY/ModularSensors.git",
+   "note": "EnviroDIY ModularSensors",
+   "authors": [
+    "Sara Damiano",
+    "Shannon Hicks"
+   ]
   },
   {
    "version": "http://github.com/EnviroDIY/PcInt_PCINT0.git",
    "name": "EnviroDIY_PCInt_PCINT0"
   },
   {
-   "note": "EnviroDIY SDI-12 Library",
-   "url": "http://github.com/EnviroDIY/Arduino-SDI-12.git",
    "name": "Arduino-SDI-12",
-   "library id": "1486"
+   "library id": "1486",
+   "url": "http://github.com/EnviroDIY/Arduino-SDI-12.git",
+   "note": "EnviroDIY SDI-12 Library",
+   "authors": [
+    "Kevin M. Smith",
+    "Sara Damiano",
+    "Shannon Hicks"
+   ]
   },
   {
    "version": "https://github.com/EnviroDIY/Arduino-SDI-12.git#mayfly",
@@ -65,50 +88,86 @@
    "name": "SDL_SSD1306"
   },
   {
-   "note": "Sodaq Pin Change Interrupt Library",
-   "url": "http://github.com/SodaqMoja/Sodaq_PcInt.git",
    "name": "Sodaq_PcInt",
-   "library id": "695"
+   "library id": "695",
+   "url": "http://github.com/SodaqMoja/Sodaq_PcInt.git",
+   "note": "Sodaq Pin Change Interrupt Library",
+   "authors": [
+    "Kees Bakker"
+   ]
   },
   {
-   "note": "Sodaq Real Time Clock (RTC) Timer Library ",
-   "url": "http://github.com/SodaqMoja/RTCTimer.git",
    "name": "RTCTimer",
-   "library id": "645"
+   "library id": "645",
+   "url": "http://github.com/SodaqMoja/RTCTimer.git",
+   "note": "Sodaq Real Time Clock (RTC) Timer Library ",
+   "authors": [
+    "Kees Bakker"
+   ]
   },
   {
-   "note": "SdFat",
-   "url": "https://github.com/greiman/SdFat.git",
    "name": "SdFat",
-   "library id": "322"
+   "library id": "322",
+   "url": "https://github.com/greiman/SdFat.git",
+   "note": "SdFat",
+   "authors": [
+    "Bill Greiman"
+   ]
   },
   {
    "version": "https://github.com/EnviroDIY/TinyGSM.git",
    "name": "TinyGSM"
   },
   {
-   "note": "DallasTemperature",
-   "url": "https://github.com/milesburton/Arduino-Temperature-Control-Library.git",
    "name": "DallasTemperature",
-   "library id": "54"
+   "library id": "54",
+   "url": "https://github.com/milesburton/Arduino-Temperature-Control-Library.git",
+   "note": "DallasTemperature",
+   "authors": [
+    "Guil Barros",
+    "Miles Burton",
+    "Rob Tillart",
+    "Tim Nuewsome"
+   ]
   },
   {
-   "note": "OneWire",
-   "url": "https://github.com/PaulStoffregen/OneWire.git",
    "name": "OneWire",
-   "library id": "1"
+   "library id": "1",
+   "url": "https://github.com/PaulStoffregen/OneWire.git",
+   "note": "OneWire",
+   "authors": [
+    "Paul Stoffregen",
+    "Tom Pollard",
+    "Derek Yerger",
+    "Jim Studt",
+    "Jason Dangel",
+    "Robin James",
+    "Ken Butcher",
+    "Guillermo Lovato",
+    "Scott Roberts",
+    "Bertrik Sikken",
+    "Mark Tillotson",
+    "Glenn Trewitt",
+    "Josh Larios"
+   ]
   },
   {
-   "note": "AOSong AM2315 I2C Temp/Humidity Sensor Library by Adafruit",
-   "url": "https://github.com/adafruit/Adafruit_AM2315.git",
    "name": "Adafruit AM2315",
-   "library id": "773"
+   "library id": "773",
+   "url": "https://github.com/adafruit/Adafruit_AM2315.git",
+   "note": "AOSong AM2315 I2C Temp/Humidity Sensor Library by Adafruit",
+   "authors": [
+    "Adafruit"
+   ]
   },
   {
-   "note": "Bosch BME280 Temp/Humidity/Pressure Sensor Library by Adafruit",
-   "url": "https://github.com/adafruit/Adafruit_BME280_Library.git",
    "name": "Adafruit BME280 Library",
-   "library id": "166"
+   "library id": "166",
+   "url": "https://github.com/adafruit/Adafruit_BME280_Library.git",
+   "note": "Bosch BME280 Temp/Humidity/Pressure Sensor Library by Adafruit",
+   "authors": [
+    "Adafruit"
+   ]
   },
   {
    "version": "https://github.com/EnviroDIY/SoftwareSerial_ExternalInts.git",
@@ -119,26 +178,35 @@
    "name": "EnviroDIY_SDI12_ExtInts"
   },
   {
-   "note": "RTCZero",
-   "url": "https://github.com/arduino-libraries/RTCZero.git",
    "name": "RTCZero",
-   "library id": "873"
+   "library id": "873",
+   "url": "https://github.com/arduino-libraries/RTCZero.git",
+   "note": "RTCZero",
+   "authors": [
+    "Arduino"
+   ]
   },
   {
-   "note": "EnviroDIY SensorModbusMaster",
-   "url": "https://github.com/EnviroDIY/SensorModbusMaster.git",
    "name": "SensorModbusMaster",
-   "library id": "1824"
+   "library id": "1824",
+   "url": "https://github.com/EnviroDIY/SensorModbusMaster.git",
+   "note": "EnviroDIY SensorModbusMaster",
+   "authors": [
+    "Sara Damiano"
+   ]
   },
   {
    "version": "https://github.com/EnviroDIY/YosemitechModbus.git",
    "name": "YosemitechModbus"
   },
   {
-   "note": "GreyGnome's EnableInterrupt",
-   "url": "https://github.com/GreyGnome/EnableInterrupt.git",
    "name": "EnableInterrupt",
-   "library id": "311"
+   "library id": "311",
+   "url": "https://github.com/GreyGnome/EnableInterrupt.git",
+   "note": "GreyGnome's EnableInterrupt",
+   "authors": [
+    "Mike 'GreyGnome' Schwager"
+   ]
   }
  ],
  "export": {
