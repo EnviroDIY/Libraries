@@ -28,11 +28,19 @@ script:
 - git status
 - git submodule update --remote --recursive
 - git status
+- git add -A
+- git status
 - git submodule status --recursive > submodule_status.txt <<EOF
-- git-archive-all --force-submodules libraries.zip
-- zip -d -q libraries "*/.gitattributes" "*/.gitignore" "*/.gitmodules" "*/.github/*" "*.sh"  "*/Doxyfile" "*/platformio.ini" "*/.travis.yml"
-- zip -d -q libraries "*/doc/*.pdf"
-- git diff HEAD -- libraries.zip
+- git diff HEAD -- submodule_status.txt
+- submod_updated=$(git diff --name-only HEAD -- submodule_status.txt)
+- echo $submod_updated
+- if [[ $submod_updated > 0 ]];
+    then git-archive-all --force-submodules libraries.zip
+    git-archive-all --force-submodules libraries.zip
+    zip -d -q libraries "*/.gitattributes" "*/.gitignore" "*/.gitmodules" "*/.github/*" "*.sh"  "*/Doxyfile" "*/platformio.ini" "*/.travis.yml"
+    zip -d -q libraries "*/doc/*.pdf"
+    ;
+  fi
 - python make_libjson.py
 - git add -A
 - git status
