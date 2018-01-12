@@ -43,7 +43,7 @@ script:
 - if [[ $submod_updated > 0 ]]; then
     zip -d -q libraries "*/doc/*.pdf";
   fi
-- python make_libjson.py
+# - python make_libjson.py
 - git status
 - is_changed=$(git diff --name-only)
 - echo $is_changed
