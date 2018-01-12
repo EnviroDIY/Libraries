@@ -21,10 +21,15 @@ before_install:
 - git remote add origin git@github.com:EnviroDIY/Libraries.git
 - git fetch --all
 - git checkout master
-- git submodule update --init --remote --recursive
 install:
 - pip install git-archive-all
 script:
+- git submodule --init --remote --recursive
+- git status
+- git submodule status --recursive
+- git submodule update --remote --recursive
+- git status
+- git submodule status --recursive
 - git-archive-all --force-submodules libraries.zip
 - zip -d -q libraries "*/.gitattributes" "*/.gitignore" "*/.gitmodules" "*/.github/*" "*.sh"  "*/Doxyfile" "*/platformio.ini" "*/.travis.yml"
 - zip -d -q libraries "*/doc/*.pdf"
