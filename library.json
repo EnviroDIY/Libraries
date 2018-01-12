@@ -5,6 +5,23 @@
         "type": "git",
         "branch": "platformio"
     },
+    "keywords": "Mayfly, EnviroDIY, sensors, DS-3231, logger, SDI-12, libraries",
+    "description": "A collection of libraries to support the EnviroDIY Mayfly",
+    "export": {
+        "exclude": [
+            "*/.gitattributes",
+            "*/.gitignore",
+            "*/.travis.yml",
+            "*/.gitmodules",
+            "*id_rsa.enc",
+            "*/platformio.ini",
+            "*/*.sh",
+            "*/make-zip.sh",
+            "*/Doxyfile",
+            "*/.git/*",
+            "*/.github/*"
+        ]
+    },
     "dependencies": [
         {
             "name": "Adafruit ADS1X15",
@@ -13,7 +30,31 @@
             "note": "TI ADS1X15 ADC Library by Adafruit",
             "authors": [
                 "Adafruit"
-            ]
+            ],
+            "frameworks": "arduino",
+            "platforms": "atmelavr, atmelsam"
+        },
+        {
+            "name": "Adafruit AM2315",
+            "library id": "773",
+            "url": "https://github.com/adafruit/Adafruit_AM2315.git",
+            "note": "AOSong AM2315 I2C Temp/Humidity Sensor Library by Adafruit",
+            "authors": [
+                "Adafruit"
+            ],
+            "frameworks": "arduino",
+            "platforms": "atmelavr, atmelsam"
+        },
+        {
+            "name": "Adafruit BME280 Library",
+            "library id": "166",
+            "url": "https://github.com/adafruit/Adafruit_BME280_Library.git",
+            "note": "Bosch BME280 Temp/Humidity/Pressure Sensor Library by Adafruit",
+            "authors": [
+                "Adafruit"
+            ],
+            "frameworks": "arduino",
+            "platforms": "atmelavr, atmelsam"
         },
         {
             "name": "DHT sensor library",
@@ -22,7 +63,9 @@
             "note": "AOSong DHT Sensor Library by Adafruit",
             "authors": [
                 "Adafruit"
-            ]
+            ],
+            "frameworks": "arduino",
+            "platforms": "atmelavr, atmelsam"
         },
         {
             "name": "Adafruit Unified Sensor",
@@ -31,7 +74,9 @@
             "note": "Adafruit Unified Sensor Library",
             "authors": [
                 "Adafruit"
-            ]
+            ],
+            "frameworks": "arduino",
+            "platforms": "atmelavr, atmelsam"
         },
         {
             "name": "Adafruit TSL2561",
@@ -40,112 +85,9 @@
             "note": "TAOS TSL2561 Luminosity Sensor Library by Adafruit",
             "authors": [
                 "Adafruit"
-            ]
-        },
-        {
-            "name": "EnviroDIY_DS3231",
-            "library id": "2079",
-            "url": "https://github.com/EnviroDIY/Sodaq_DS3231.git",
-            "note": "An Arduino library for the DS3231 RTC (Real Time Clock), based off of the Sodaq_DS3231 library.",
-            "authors": [
-                "Kees Bakker",
-                "Sara Damiano"
-            ]
-        },
-        {
-            "note": "An Arduino library for the SODAQ GPRSbee.",
-            "version": "http://github.com/EnviroDIY/GPRSBee.git#v1.2_hacked",
-            "name": "GPRSbee",
-            "authors": [
-                "Kees Bakker"
-            ]
-        },
-        {
-            "name": "EnviroDIY_ModularSensors",
-            "library id": "1648",
-            "url": "https://github.com/EnviroDIY/ModularSensors.git",
-            "note": "EnviroDIY ModularSensors - A library that allows access to multiple sensors through a unified interface.",
-            "authors": [
-                "Sara Damiano",
-                "Shannon Hicks"
-            ]
-        },
-        {
-            "note": "Sodaq library controlling pin change interrupts - modified to use only interrupt vector 0.",
-            "version": "http://github.com/EnviroDIY/PcInt_PCINT0.git",
-            "name": "Sodaq_PcInt_PCINT0",
-            "authors": [
-                "Kees Bakker"
-            ]
-        },
-        {
-            "name": "Arduino-SDI-12",
-            "library id": "1486",
-            "url": "http://github.com/EnviroDIY/Arduino-SDI-12.git",
-            "note": "EnviroDIY SDI-12 Library",
-            "authors": [
-                "Kevin M. Smith",
-                "Sara Damiano",
-                "Shannon Hicks"
-            ]
-        },
-        {
-            "note": "EnviroDIY SDI-12 Library - modified to use only interrupt vector 3.",
-            "version": "https://github.com/EnviroDIY/Arduino-SDI-12.git#mayfly",
-            "name": "Arduino-SDI-12_PCINT3",
-            "authors": [
-                "Kevin M. Smith",
-                "Sara Damiano",
-                "Shannon Hicks"
-            ]
-        },
-        {
-            "note": "Arduino SoftwareSerial  Library - modified to use only interrupt vectors 1 and 2.",
-            "version": "http://github.com/EnviroDIY/SoftwareSerial_PCINT12.git",
-            "name": "SoftwareSerial_PCINT12"
-        },
-        {
-            "note": "Library for SwitchDoc Labs Grove OLED 128x64",
-            "version": "http://github.com/switchdoclabs/SDL_Arduino_SSD1306.git",
-            "name": "SDL_SSD1306",
-            "authors": [
-                "SwitchDoc Labs"
-            ]
-        },
-        {
-            "name": "Sodaq_PcInt",
-            "library id": "695",
-            "url": "http://github.com/SodaqMoja/Sodaq_PcInt.git",
-            "note": "Sodaq Pin Change Interrupt Library",
-            "authors": [
-                "Kees Bakker"
-            ]
-        },
-        {
-            "name": "RTCTimer",
-            "library id": "645",
-            "url": "http://github.com/SodaqMoja/RTCTimer.git",
-            "note": "Sodaq Real Time Clock (RTC) Timer Library ",
-            "authors": [
-                "Kees Bakker"
-            ]
-        },
-        {
-            "name": "SdFat",
-            "library id": "322",
-            "url": "https://github.com/greiman/SdFat.git",
-            "note": "SdFat - FAT16/FAT32 file system for SD cards.",
-            "authors": [
-                "Bill Greiman"
-            ]
-        },
-        {
-            "note": "A small Arduino library for GPRS modules.",
-            "version": "https://github.com/EnviroDIY/TinyGSM.git",
-            "name": "TinyGSM",
-            "authors": [
-                "Volodymyr Shymanskyy"
-            ]
+            ],
+            "frameworks": "arduino",
+            "platforms": "atmelavr, atmelsam"
         },
         {
             "name": "DallasTemperature",
@@ -157,7 +99,115 @@
                 "Miles Burton",
                 "Rob Tillart",
                 "Tim Nuewsome"
-            ]
+            ],
+            "frameworks": "arduino",
+            "platforms": "atmelavr, atmelsam"
+        },
+        {
+            "name": "EnableInterrupt",
+            "library id": "311",
+            "url": "https://github.com/GreyGnome/EnableInterrupt.git",
+            "note": "GreyGnome's EnableInterrupt - Assign an interrupt to any supported pin on all Arduinos",
+            "authors": [
+                "Mike 'GreyGnome' Schwager"
+            ],
+            "frameworks": "arduino",
+            "platforms": "atmelavr, atmelsam"
+        },
+        {
+            "name": "EnviroDIY_DS3231",
+            "library id": "2079",
+            "url": "https://github.com/EnviroDIY/Sodaq_DS3231.git",
+            "note": "An Arduino library for the DS3231 RTC (Real Time Clock), based off of the Sodaq_DS3231 library.",
+            "authors": [
+                "Kees Bakker",
+                "Sara Damiano"
+            ],
+            "frameworks": "arduino",
+            "platforms": "atmelavr, atmelsam"
+        },
+        {
+            "note": "An Arduino library for the SODAQ GPRSbee.",
+            "version": "http://github.com/EnviroDIY/GPRSBee.git#v1.2_hacked",
+            "name": "GPRSbee",
+            "authors": [
+                "Kees Bakker"
+            ],
+            "frameworks": "arduino",
+            "platforms": "atmelavr, atmelsam"
+        },
+        {
+            "name": "EnviroDIY_ModularSensors",
+            "library id": "1648",
+            "url": "https://github.com/EnviroDIY/ModularSensors.git",
+            "note": "EnviroDIY ModularSensors - A library that allows access to multiple sensors through a unified interface.",
+            "authors": [
+                "Sara Damiano",
+                "Shannon Hicks"
+            ],
+            "frameworks": "arduino",
+            "platforms": "atmelavr, atmelsam"
+        },
+        {
+            "name": "Sodaq_PcInt_PCINT0",
+            "version": "http://github.com/EnviroDIY/PcInt_PCINT0.git",
+            "note": "Sodaq library controlling pin change interrupts - modified to use only interrupt vector 0.",
+            "authors": [
+                "Kees Bakker"
+            ],
+            "frameworks": "arduino",
+            "platforms": "atmelavr"
+        },
+        {
+            "name": "Arduino-SDI-12",
+            "library id": "1486",
+            "url": "http://github.com/EnviroDIY/Arduino-SDI-12.git",
+            "note": "EnviroDIY SDI-12 Library",
+            "authors": [
+                "Kevin M. Smith",
+                "Sara Damiano",
+                "Shannon Hicks"
+            ],
+            "frameworks": "arduino",
+            "platforms": "atmelavr, atmelsam"
+        },
+        {
+            "name": "Arduino-SDI-12_ExtInts",
+            "version": "https://github.com/EnviroDIY/Arduino-SDI-12.git#ExtInts",
+            "note": "EnviroDIY SDI-12 Library - modified to use interrupts called by an external library.",
+            "authors": [
+                "Kevin M. Smith",
+                "Sara Damiano",
+                "Shannon Hicks"
+            ],
+            "frameworks": "arduino",
+            "platforms": "atmelavr"
+        },
+        {
+            "note": "EnviroDIY SDI-12 Library - modified to use only interrupt vector 3.",
+            "version": "https://github.com/EnviroDIY/Arduino-SDI-12.git#mayfly",
+            "name": "Arduino-SDI-12_PCINT3",
+            "authors": [
+                "Kevin M. Smith",
+                "Sara Damiano",
+                "Shannon Hicks"
+            ],
+            "frameworks": "arduino",
+            "platforms": "atmelavr"
+        },
+        {
+            "note": "Arduino SoftwareSerial  Library - modified to use interrupts called by an external library.",
+            "version": "https://github.com/EnviroDIY/SoftwareSerial_ExternalInts.git",
+            "name": "SoftwareSerial_ExtInts",
+            "frameworks": "arduino",
+            "platforms": "atmelavr"
+        },
+        {
+            "note": "Arduino SoftwareSerial  Library - modified to use only interrupt vectors 1 and 2.",
+            "version": "http://github.com/EnviroDIY/SoftwareSerial_PCINT12.git",
+            "name": "SoftwareSerial_PCINT12",
+            "frameworks": "arduino",
+            "platforms": "atmelavr"
         },
         {
             "name": "OneWire",
@@ -178,40 +228,9 @@
                 "Mark Tillotson",
                 "Glenn Trewitt",
                 "Josh Larios"
-            ]
-        },
-        {
-            "name": "Adafruit AM2315",
-            "library id": "773",
-            "url": "https://github.com/adafruit/Adafruit_AM2315.git",
-            "note": "AOSong AM2315 I2C Temp/Humidity Sensor Library by Adafruit",
-            "authors": [
-                "Adafruit"
-            ]
-        },
-        {
-            "name": "Adafruit BME280 Library",
-            "library id": "166",
-            "url": "https://github.com/adafruit/Adafruit_BME280_Library.git",
-            "note": "Bosch BME280 Temp/Humidity/Pressure Sensor Library by Adafruit",
-            "authors": [
-                "Adafruit"
-            ]
-        },
-        {
-            "note": "Arduino SoftwareSerial  Library - modified to use interrupts called by an external library.",
-            "version": "https://github.com/EnviroDIY/SoftwareSerial_ExternalInts.git",
-            "name": "SoftwareSerial_ExtInts"
-        },
-        {
-            "note": "EnviroDIY SDI-12 Library - modified to use interrupts called by an external library.",
-            "version": "https://github.com/EnviroDIY/Arduino-SDI-12.git#ExtInts",
-            "name": "Arduino-SDI-12_ExtInts",
-            "authors": [
-                "Kevin M. Smith",
-                "Sara Damiano",
-                "Shannon Hicks"
-            ]
+            ],
+            "frameworks": "arduino",
+            "platforms": "atmelavr, atmelsam"
         },
         {
             "name": "RTCZero",
@@ -220,7 +239,30 @@
             "note": "Functions for using the processor real time clock in SAMD21 processors",
             "authors": [
                 "Arduino"
-            ]
+            ],
+            "frameworks": "arduino",
+            "platforms": "atmelsam"
+        },
+        {
+            "name": "SdFat",
+            "library id": "322",
+            "url": "https://github.com/greiman/SdFat.git",
+            "note": "SdFat - FAT16/FAT32 file system for SD cards.",
+            "authors": [
+                "Bill Greiman"
+            ],
+            "frameworks": "arduino",
+            "platforms": "atmelavr, atmelsam"
+        },
+        {
+            "name": "SDL_SSD1306",
+            "version": "http://github.com/switchdoclabs/SDL_Arduino_SSD1306.git",
+            "note": "Library for SwitchDoc Labs Grove OLED 128x64",
+            "authors": [
+                "SwitchDoc Labs"
+            ],
+            "frameworks": "arduino",
+            "platforms": "atmelavr"
         },
         {
             "name": "SensorModbusMaster",
@@ -229,7 +271,41 @@
             "note": "EnviroDIY SensorModbusMaster - Arduino library for communicating via modbus with the Arduino acting as the modbus master.",
             "authors": [
                 "Sara Damiano"
-            ]
+            ],
+            "frameworks": "arduino",
+            "platforms": "atmelavr, atmelsam"
+        },
+        {
+            "name": "Sodaq_PcInt",
+            "library id": "695",
+            "url": "http://github.com/SodaqMoja/Sodaq_PcInt.git",
+            "note": "Sodaq Pin Change Interrupt Library",
+            "authors": [
+                "Kees Bakker"
+            ],
+            "frameworks": "arduino",
+            "platforms": "atmelavr"
+        },
+        {
+            "name": "RTCTimer",
+            "library id": "645",
+            "url": "http://github.com/SodaqMoja/RTCTimer.git",
+            "note": "Sodaq Real Time Clock (RTC) Timer Library ",
+            "authors": [
+                "Kees Bakker"
+            ],
+            "frameworks": "arduino",
+            "platforms": "atmelavr"
+        },
+        {
+            "name": "TinyGSM",
+            "version": "https://github.com/EnviroDIY/TinyGSM.git",
+            "note": "A small Arduino library for GPRS modules.",
+            "authors": [
+                "Volodymyr Shymanskyy"
+            ],
+            "frameworks": "arduino",
+            "platforms": "atmelavr, atmelsam"
         },
         {
             "name": "YosemitechModbus",
@@ -238,33 +314,9 @@
             "note": "Arduino library for communication with Yosemitech sensors via Modbus.",
             "authors": [
                 "Sara Damiano"
-            ]
-        },
-        {
-            "name": "EnableInterrupt",
-            "library id": "311",
-            "url": "https://github.com/GreyGnome/EnableInterrupt.git",
-            "note": "GreyGnome's EnableInterrupt - Assign an interrupt to any supported pin on all Arduinos",
-            "authors": [
-                "Mike 'GreyGnome' Schwager"
-            ]
+            ],
+            "frameworks": "arduino",
+            "platforms": "atmelavr, atmelsam"
         }
-    ],
-    "export": {
-        "exclude": [
-            "*/.gitattributes",
-            "*/.gitignore",
-            "*/.travis.yml",
-            "*/.gitmodules",
-            "*id_rsa.enc",
-            "*/platformio.ini",
-            "*/*.sh",
-            "*/make-zip.sh",
-            "*/Doxyfile",
-            "*/.git/*",
-            "*/.github/*"
-        ]
-    },
-    "keywords": "Mayfly, EnviroDIY, sensors, DS-3231, logger, SDI-12, libraries",
-    "description": "A collection of libraries to support the EnviroDIY Mayfly"
+    ]
 }
