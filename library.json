@@ -64,15 +64,19 @@
             "name": "EnviroDIY_ModularSensors",
             "library id": "1648",
             "url": "https://github.com/EnviroDIY/ModularSensors.git",
-            "note": "EnviroDIY ModularSensors - A library that allows acces to multiple sensors through a unified interface.",
+            "note": "EnviroDIY ModularSensors - A library that allows access to multiple sensors through a unified interface.",
             "authors": [
                 "Sara Damiano",
                 "Shannon Hicks"
             ]
         },
         {
+            "note": "Sodaq library controlling pin change interrupts - modified to use only interrupt vector 0.",
             "version": "http://github.com/EnviroDIY/PcInt_PCINT0.git",
-            "name": "EnviroDIY_PCInt_PCINT0"
+            "name": "Sodaq_PcInt_PCINT0",
+            "authors": [
+                "Kees Bakker"
+            ]
         },
         {
             "name": "Arduino-SDI-12",
@@ -86,12 +90,19 @@
             ]
         },
         {
+            "note": "EnviroDIY SDI-12 Library - modified to use only interrupt vector 3.",
             "version": "https://github.com/EnviroDIY/Arduino-SDI-12.git#mayfly",
-            "name": "EnviroDIY_SDI12_PCINT3"
+            "name": "Arduino-SDI-12_PCINT3",
+            "authors": [
+                "Kevin M. Smith",
+                "Sara Damiano",
+                "Shannon Hicks"
+            ]
         },
         {
+            "note": "Arduino SoftwareSerial  Library - modified to use only interrupt vectors 1 and 2.",
             "version": "http://github.com/EnviroDIY/SoftwareSerial_PCINT12.git",
-            "name": "EnviroDIY_SoftwareSerial_PCINT12"
+            "name": "SoftwareSerial_PCINT12"
         },
         {
             "version": "http://github.com/switchdoclabs/SDL_Arduino_SSD1306.git",
@@ -184,8 +195,9 @@
             ]
         },
         {
+            "note": "Arduino SoftwareSerial  Library - modified to use interrupts called by an external library.",
             "version": "https://github.com/EnviroDIY/SoftwareSerial_ExternalInts.git",
-            "name": "EnviroDIY_SoftwareSerial_ExtInts"
+            "name": "SoftwareSerial_ExtInts"
         },
         {
             "version": "https://github.com/EnviroDIY/Arduino-SDI-12.git#ExtInts",
@@ -204,7 +216,7 @@
             "name": "SensorModbusMaster",
             "library id": "1824",
             "url": "https://github.com/EnviroDIY/SensorModbusMaster.git",
-            "note": "EnviroDIY SensorModbusMaster - Arduino library for communicating via modbus with the Arduino acting as master.",
+            "note": "EnviroDIY SensorModbusMaster - Arduino library for communicating via modbus with the Arduino acting as the modbus master.",
             "authors": [
                 "Sara Damiano"
             ]
@@ -243,6 +255,6 @@
             "*/.github/*"
         ]
     },
-    "keywords": "Mayfly, EnviroDIY, sensors, DS-3231, logger, SDI-12, libraries",
-    "description": "A collection of libraries to support the EnviroDIY Mayfly"
+    "keywords": "Mayfly, EnviroDIY, sensors, DS-3231, logger, SDI-12,            libraries",
+    "description": "A collection of libraries to support the            EnviroDIY Mayfly"
 }
