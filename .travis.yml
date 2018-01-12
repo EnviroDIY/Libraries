@@ -44,10 +44,12 @@ script:
     zip -d -q libraries "*/doc/*.pdf";
   fi
 - python make_libjson.py
-- git add -A
 - git status
 - is_changed=$(git diff --name-only)
 - echo $is_changed
+- if [[ $is_changed > 0 ]]; then
+    git add -A;
+  fi
 - if [[ $is_changed > 0 ]]; then
     git commit -m "Updated submodules and zip (Travis build $TRAVIS_BUILD_NUMBER) [ci skip]";
   fi

@@ -24,4 +24,3 @@
  322d63cff1a382d24dc2ce7c01932f954acdcb1a Sodaq_RTCTimer (v1.0.0-2-g322d63c)
  83e41c4bb0654b36769df162b66fb07061278d5c TinyGSM (v0.1.7-234-g83e41c4)
  1c6b99aaffdbfde7668cfc941a35f5fb4e9aa1d0 YosemitechModbus (heads/master)
- made a change
