@@ -8,7 +8,7 @@ import json
 
 library = {"name": "EnviroDIYMayfly",
            "description": "A collection of libraries to support the EnviroDIY Mayfly",
-           "keywords": "Mayfly, EnviroDIY, Sensors, DS-3231, Logger, SDI-12",
+           "keywords": "Mayfly, EnviroDIY, sensors, DS-3231, logger, SDI-12, libraries",
            "repository": {"type": "git", "url": "https://github.com/EnviroDIY/Libraries.git", "branch": "platformio"},
            "export": {"exclude": ["*/.gitattributes", "*/.gitignore", "*/.travis.yml",
                                   "*/.gitmodules", "*id_rsa.enc", "*/platformio.ini",

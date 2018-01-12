@@ -243,6 +243,6 @@
             "*/.github/*"
         ]
     },
-    "keywords": "Mayfly, EnviroDIY, Sensors, DS-3231, Logger, SDI-12",
+    "keywords": "Mayfly, EnviroDIY, sensors, DS-3231, logger, SDI-12, libraries",
     "description": "A collection of libraries to support the EnviroDIY Mayfly"
 }
