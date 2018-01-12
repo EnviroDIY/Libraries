@@ -24,15 +24,15 @@ before_install:
 install:
 - pip install git-archive-all
 script:
-- git submodule --init --remote --recursive
+- git submodule --init
 - git status
-- git submodule status --recursive
 - git submodule update --remote --recursive
 - git status
-- git submodule status --recursive
+- git submodule status --recursive > submodule_status.txt <<EOF
 - git-archive-all --force-submodules libraries.zip
 - zip -d -q libraries "*/.gitattributes" "*/.gitignore" "*/.gitmodules" "*/.github/*" "*.sh"  "*/Doxyfile" "*/platformio.ini" "*/.travis.yml"
 - zip -d -q libraries "*/doc/*.pdf"
+- git diff --name-only HEAD -- libraries.zip
 - python make_libjson.py
 - git add -A
 - git status
