@@ -105,8 +105,12 @@
             "name": "SoftwareSerial_PCINT12"
         },
         {
+            "note": "Library for SwitchDoc Labs Grove OLED 128x64",
             "version": "http://github.com/switchdoclabs/SDL_Arduino_SSD1306.git",
-            "name": "SDL_SSD1306"
+            "name": "SDL_SSD1306",
+            "authors": [
+                "SwitchDoc Labs"
+            ]
         },
         {
             "name": "Sodaq_PcInt",
@@ -200,8 +204,14 @@
             "name": "SoftwareSerial_ExtInts"
         },
         {
+            "note": "EnviroDIY SDI-12 Library - modified to use interrupts called by an external library.",
             "version": "https://github.com/EnviroDIY/Arduino-SDI-12.git#ExtInts",
-            "name": "EnviroDIY_SDI12_ExtInts"
+            "name": "Arduino-SDI-12_ExtInts",
+            "authors": [
+                "Kevin M. Smith",
+                "Sara Damiano",
+                "Shannon Hicks"
+            ]
         },
         {
             "name": "RTCZero",
@@ -255,6 +265,6 @@
             "*/.github/*"
         ]
     },
-    "keywords": "Mayfly, EnviroDIY, sensors, DS-3231, logger, SDI-12,            libraries",
-    "description": "A collection of libraries to support the            EnviroDIY Mayfly"
+    "keywords": "Mayfly, EnviroDIY, sensors, DS-3231, logger, SDI-12, libraries",
+    "description": "A collection of libraries to support the EnviroDIY Mayfly"
 }

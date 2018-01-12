@@ -7,10 +7,10 @@
 import json
 
 library = {"name": "EnviroDIYMayfly",
-           "description": "A collection of libraries to support the \
-           EnviroDIY Mayfly",
-           "keywords": "Mayfly, EnviroDIY, sensors, DS-3231, logger, SDI-12, \
-           libraries",
+           "description": ('A collection of libraries to support the ' +
+                           'EnviroDIY Mayfly'),
+           "keywords": ('Mayfly, EnviroDIY, sensors, DS-3231, logger, ' +
+                        'SDI-12, libraries'),
            "repository": {"type": "git", "url":
                           "https://github.com/EnviroDIY/Libraries.git",
                           "branch": "platformio"},
@@ -126,7 +126,7 @@ with open('.gitmodules', 'r') as submods:
                 dep['url'] = dep.pop('version')
                 dep['authors'] = ["Kevin M. Smith",
                                   "Sara Damiano", "Shannon Hicks"]
-            if dep['name'] == 'EnviroDIY_SDI12':
+            if dep['name'] == 'EnviroDIY_SDI12_ExtInts':
                 dep['name'] = 'Arduino-SDI-12_ExtInts'
                 dep['note'] = ('EnviroDIY SDI-12 Library - modified to use ' +
                                'interrupts called by an external library.')
@@ -169,6 +169,9 @@ with open('.gitmodules', 'r') as submods:
                 dep['library id'] = '322'
                 dep['url'] = dep.pop('version')
                 dep['authors'] = ["Bill Greiman"]
+            if dep['name'] == 'SDL_SSD1306':
+                dep['note'] = ('Library for SwitchDoc Labs Grove OLED 128x64')
+                dep['authors'] = ["SwitchDoc Labs"]
             if dep['name'] == 'SensorModbusMaster':
                 dep['note'] = ('EnviroDIY SensorModbusMaster - Arduino ' +
                                'library for communicating via modbus with ' +
