@@ -36,7 +36,11 @@ script:
 - echo $submod_updated
 - if [[ $submod_updated > 0 ]]; then
     git-archive-all --force-submodules libraries.zip;
+  fi
+- if [[ $submod_updated > 0 ]]; then
     zip -d -q libraries "*/.gitattributes" "*/.gitignore" "*/.gitmodules" "*/.github/*" "*.sh"  "*/Doxyfile" "*/platformio.ini" "*/.travis.yml";
+  fi
+- if [[ $submod_updated > 0 ]]; then
     zip -d -q libraries "*/doc/*.pdf";
   fi
 - python make_libjson.py
@@ -44,7 +48,7 @@ script:
 - git status
 - is_changed=$(git diff --name-only)
 - echo $is_changed
-- if [[ $is_changed > 0 ]];
+- if [[ $is_changed > 0 ]]; then
     git commit -m "Updated submodules and zip (Travis build $TRAVIS_BUILD_NUMBER) [ci skip]";
   fi
 - git push origin master
@@ -53,7 +57,7 @@ script:
 - git add library.json
 - is_changed=$(git diff --name-only HEAD -- library.json)
 - echo $is_changed
-- if [[ $is_changed > 0 ]];
-    then git commit -m "Updated library.json (Travis build $TRAVIS_BUILD_NUMBER) [ci skip]";
+- if [[ $is_changed > 0 ]]; then
+    git commit -m "Updated library.json (Travis build $TRAVIS_BUILD_NUMBER) [ci skip]";
   fi
 - git push origin platformio
