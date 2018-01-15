@@ -9,7 +9,7 @@
 	url = https://github.com/adafruit/Adafruit_Sensor
 [submodule "Adafruit_TSL2561"]
 	path = Adafruit_TSL2561
-	url = http://github.com/Adafruit/TSL2561-Arduino-Library
+	url = https://github.com/adafruit/Adafruit_TSL2561
 [submodule "EnviroDIY_DS3231"]
 	path = EnviroDIY_DS3231
 	url = https://github.com/EnviroDIY/Sodaq_DS3231
