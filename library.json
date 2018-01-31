@@ -196,14 +196,14 @@
             "platforms": "atmelavr"
         },
         {
-            "note": "Arduino SoftwareSerial  Library - modified to use interrupts called by an external library.",
+            "note": "Arduino SoftwareSerial Library - modified to use interrupts called by an external library.",
             "version": "https://github.com/EnviroDIY/SoftwareSerial_ExternalInts.git",
             "name": "SoftwareSerial_ExtInts",
             "frameworks": "arduino",
             "platforms": "atmelavr"
         },
         {
-            "note": "Arduino SoftwareSerial  Library - modified to use only interrupt vectors 1 and 2.",
+            "note": "Arduino SoftwareSerial Library - modified to use only interrupt vectors 1 and 2.",
             "version": "http://github.com/EnviroDIY/SoftwareSerial_PCINT12.git",
             "name": "SoftwareSerial_PCINT12",
             "frameworks": "arduino",
