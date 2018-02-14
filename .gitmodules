@@ -1,6 +1,3 @@
-[submodule "Adafruit_ADS1X15"]
-	path = Adafruit_ADS1X15
-	url = http://github.com/Adafruit/Adafruit_ADS1X15
 [submodule "Adafruit_DHT"]
 	path = Adafruit_DHT
 	url = http://github.com/adafruit/DHT-sensor-library
