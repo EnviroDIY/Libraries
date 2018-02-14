@@ -77,3 +77,6 @@
 [submodule "EnableInterrupt"]
 	path = EnableInterrupt
 	url = https://github.com/GreyGnome/EnableInterrupt.git
+[submodule "Adafruit_ADS1X15"]
+	path = Adafruit_ADS1X15
+	url = https://github.com/soligen2010/Adafruit_ADS1X15.git
