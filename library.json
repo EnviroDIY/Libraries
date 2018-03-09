@@ -97,6 +97,17 @@
             "platforms": "atmelavr, atmelsam"
         },
         {
+            "name": "AltSoftSerial",
+            "library id": "73",
+            "version": "https://github.com/PaulStoffregen/AltSoftSerial.git",
+            "url": "http://www.pjrc.com/teensy/td_libs_AltSoftSerial.html",
+            "note": "Improved software emulated serial, using hardware timers.  Must pull from git until a new version is officially released.",
+            "authors": [
+                "Paul Stoffregen"
+            ],
+            "frameworks": "arduino"
+        },
+        {
             "name": "DallasTemperature",
             "library id": "54",
             "url": "https://github.com/milesburton/Arduino-Temperature-Control-Library.git",
