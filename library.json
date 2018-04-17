@@ -335,6 +335,14 @@
             ],
             "frameworks": "arduino",
             "platforms": "atmelavr, atmelsam"
+        },
+        {
+            "name": "MS5803",
+            "version": "https://github.com/EnviroDIY/MS5803.git",
+            "note": "General interface to MS5803-series pressure transducers",
+            "authors": [
+                "Bobby Schulz"
+            ]
         }
     ]
 }
