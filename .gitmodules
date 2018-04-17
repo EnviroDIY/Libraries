@@ -83,3 +83,6 @@
 [submodule "AltSoftSerial"]
 	path = AltSoftSerial
 	url = https://github.com/PaulStoffregen/AltSoftSerial
+[submodule "MS5803"]
+	path = MS5803
+	url = https://github.com/EnviroDIY/MS5803.git
