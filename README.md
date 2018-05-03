@@ -51,12 +51,14 @@ To update all libraries, run the command:
 * [Adafruit TSL2561](https://github.com/Adafruit/TSL2561-Arduino-Library/) - Controls the Adafruit [TSL2561](https://www.adafruit.com/products/439) digital luminosity sensor.
 * [Adafruit AM2315](https://github.com/adafruit/Adafruit_AM2315) - Controls and communicates with an [AOSong AM2315](www.aosong.com/asp_bin/Products/en/AM2315.pdf) encased I2C temperature and humidity sensor
 * [Adafruit BME280 Library](https://github.com/adafruit/Adafruit_BME280_Library) - Controls and communicates with a [Bosch BME280](https://www.bosch-sensortec.com/bst/products/all_products/bme280) humidity, barometric pressure and temperature sensor.
+- [Adafruit MPL115A2 library](https://github.com/adafruit/Adafruit_MPL115A2) - Controls and communicates with a [Freescale Semiconductor MPL115A2](https://www.nxp.com/docs/en/data-sheet/MPL115A2.pdf) Miniature I2C Digital Barometer
 * [OneWire](https://github.com/PaulStoffregen/OneWire) - Lets you access 1-wire devices made by Maxim/Dallas, such as temperature sensors and ibutton secure memory. For temperature sensors, the DallasTemperature library can be used with this library.
 * [Dallas Temperature](https://github.com/milesburton/Arduino-Temperature-Control-Library) - Arduino plug and go library for the Maxim (previously Dallas) DS18B20 (and similar) temperature ICs
-* [YosemitechModbus](https://github.com/EnviroDIY/YosemitechModbus) - Communicates with [Yosemitech](http://www.yosemitech.com/en/) brand modbus sensors.
 * [SDL SSD1306](https://github.com/switchdoclabs/SDL_Arduino_SSD1306)  - Controls the SwitchDoc Labs Grove [128x64 OLED](http://store.switchdoc.com/grove-128x64-i2c-oled-board-for-arduino-and-raspberry-pi/).
 * [RTCZero](https://github.com/arduino-libraries/RTCZero) - This library is _NOT_ compatible with the EnviroDIY Mayfly, but is included for convenience for anyone using a SAMD board.  This controls the real time clock and sleep modes for Atmel SAMD21 boards.
 * [EnviroDIY MS5803 Library](https://github.com/EnviroDIY/MS5803) - Communicates with a Measurement Specialties MS5803 pressure sensor
+- [EnviroDIY KellerModbus Library](https://github.com/EnviroDIY/MS5803) - for all Keller modbus pressure and water level sensors.
+* [EnviroDIY YosemitechModbus](https://github.com/EnviroDIY/YosemitechModbus) - Communicates with [Yosemitech](http://www.yosemitech.com/en/) brand modbus sensors.
 
 
 
