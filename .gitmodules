@@ -89,3 +89,9 @@
 [submodule "MS5803"]
 	path = MS5803
 	url = https://github.com/EnviroDIY/MS5803.git
+[submodule "KellerModbus"]
+	path = KellerModbus
+	url = https://github.com/EnviroDIY/KellerModbus.git
+[submodule "Adafruit_MPL115A2"]
+	path = Adafruit_MPL115A2
+	url = https://github.com/adafruit/Adafruit_MPL115A2.git
