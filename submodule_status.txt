@@ -18,7 +18,7 @@
  60860b694dd168027a69ca9736a5e35713988561 EnviroDIY_SoftwareSerial_ExtInts (heads/master)
  18a1926eb1d1af661656fdddcb69847658bc8eba EnviroDIY_SoftwareSerial_PCINT12 (heads/master)
  d27195631ddf0e2e4941950e46740f2ffdb69673 KellerModbus (heads/master)
- ab9c43c3ba6612e33eb865be5f08287b3a18c203 MS5803 (heads/master)
+ 21858dd65605a4a7da2f2fab27d82303e1a93917 MS5803 (heads/master)
  578591782da41dd20fe6947ad3f8fb6056172b43 OneWire (v2.3.4-1-g5785917)
  618d53117e94c85141b362c121497c0acf07ce29 RTCZero (1.5.1-10-g618d531)
  2eb9eb32f04a609a55fef474dc94a02c5e3f1d92 SDL_SSD1306 (heads/master)

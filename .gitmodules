@@ -88,7 +88,7 @@
 	url = https://github.com/PaulStoffregen/AltSoftSerial
 [submodule "MS5803"]
 	path = MS5803
-	url = https://github.com/EnviroDIY/MS5803.git
+	url = https://github.com/NorthernWidget/MS5803.git
 [submodule "KellerModbus"]
 	path = KellerModbus
 	url = https://github.com/EnviroDIY/KellerModbus.git
