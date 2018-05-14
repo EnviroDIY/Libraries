@@ -56,8 +56,8 @@ To update all libraries, run the command:
 * [Dallas Temperature](https://github.com/milesburton/Arduino-Temperature-Control-Library) - Arduino plug and go library for the Maxim (previously Dallas) DS18B20 (and similar) temperature ICs
 * [SDL SSD1306](https://github.com/switchdoclabs/SDL_Arduino_SSD1306)  - Controls the SwitchDoc Labs Grove [128x64 OLED](http://store.switchdoc.com/grove-128x64-i2c-oled-board-for-arduino-and-raspberry-pi/).
 * [RTCZero](https://github.com/arduino-libraries/RTCZero) - This library is _NOT_ compatible with the EnviroDIY Mayfly, but is included for convenience for anyone using a SAMD board.  This controls the real time clock and sleep modes for Atmel SAMD21 boards.
-* [EnviroDIY MS5803 Library](https://github.com/EnviroDIY/MS5803) - Communicates with a Measurement Specialties MS5803 pressure sensor
-- [EnviroDIY KellerModbus Library](https://github.com/EnviroDIY/MS5803) - for all Keller modbus pressure and water level sensors.
+* [Northern Widget MS5803 Library](https://github.com/NorthernWidget/MS5803) - Communicates with a Measurement Specialties MS5803 pressure sensor
+- [EnviroDIY KellerModbus Library](https://github.com/EnviroDIY/KellerModbus) - for all Keller modbus pressure and water level sensors.
 * [EnviroDIY YosemitechModbus](https://github.com/EnviroDIY/YosemitechModbus) - Communicates with [Yosemitech](http://www.yosemitech.com/en/) brand modbus sensors.
 
 

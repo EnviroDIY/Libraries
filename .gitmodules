@@ -54,16 +54,16 @@
 	url = https://github.com/PaulStoffregen/OneWire
 [submodule "Adafruit_AM2315"]
 	path = Adafruit_AM2315
-	url = https://github.com/adafruit/Adafruit_AM2315.git
+	url = https://github.com/adafruit/Adafruit_AM2315
 [submodule "Adafruit_BME280"]
 	path = Adafruit_BME280
-	url = https://github.com/adafruit/Adafruit_BME280_Library.git
+	url = https://github.com/adafruit/Adafruit_BME280_Library
 [submodule "EnviroDIY_SoftwareSerial_ExtInts"]
 	path = EnviroDIY_SoftwareSerial_ExtInts
-	url = https://github.com/EnviroDIY/SoftwareSerial_ExternalInts.git
+	url = https://github.com/EnviroDIY/SoftwareSerial_ExternalInts
 [submodule "EnviroDIY_SDI12_ExtInts"]
 	path = EnviroDIY_SDI12_ExtInts
-	url = https://github.com/EnviroDIY/Arduino-SDI-12.git
+	url = https://github.com/EnviroDIY/Arduino-SDI-12
 	branch = ExtInts
 [submodule "RTCZero"]
 	path = RTCZero
@@ -76,19 +76,19 @@
 	url = https://github.com/EnviroDIY/YosemitechModbus
 [submodule "EnableInterrupt"]
 	path = EnableInterrupt
-	url = https://github.com/GreyGnome/EnableInterrupt.git
+	url = https://github.com/GreyGnome/EnableInterrupt
 [submodule "Adafruit_ADS1X15"]
 	path = Adafruit_ADS1X15
-	url = https://github.com/soligen2010/Adafruit_ADS1X15.git
+	url = https://github.com/soligen2010/Adafruit_ADS1X15
 [submodule "AltSoftSerial"]
 	path = AltSoftSerial
 	url = https://github.com/PaulStoffregen/AltSoftSerial
 [submodule "MS5803"]
 	path = MS5803
-	url = https://github.com/NorthernWidget/MS5803.git
+	url = https://github.com/NorthernWidget/MS5803
 [submodule "KellerModbus"]
 	path = KellerModbus
-	url = https://github.com/EnviroDIY/KellerModbus.git
+	url = https://github.com/EnviroDIY/KellerModbus
 [submodule "Adafruit_MPL115A2"]
 	path = Adafruit_MPL115A2
-	url = https://github.com/adafruit/Adafruit_MPL115A2.git
+	url = https://github.com/adafruit/Adafruit_MPL115A2
