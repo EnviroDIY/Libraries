@@ -38,7 +38,10 @@ script:
     git-archive-all --force-submodules libraries.zip;
   fi
 - if [[ $submod_updated > 0 ]]; then
-    zip -d -q libraries "*/.gitattributes" "*/.gitignore" "*/.gitmodules" "*/.github/*" "*.sh"  "*/Doxyfile" "*/platformio.ini" "*/.travis.yml";
+    zip -d -q libraries "*/.gitattributes" "*/.gitignore" "*/.gitmodules" "*/.github/*" "*.sh"  "*/Doxyfile" "*/.travis.yml";
+    zip -d -q libraries "*/EnviroDIY_ModularSensors/doc/*";
+    zip -d -q libraries "*/TinyGSM/extras/*";
+    zip -d -q libraries "*/YosemitechModbus/doc/*";
   fi
 - if [[ $submod_updated > 0 ]]; then
     zip -d -q libraries "*/doc/*.pdf";
