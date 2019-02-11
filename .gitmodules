@@ -92,3 +92,9 @@
 [submodule "Adafruit_MPL115A2"]
 	path = Adafruit_MPL115A2
 	url = https://github.com/adafruit/Adafruit_MPL115A2
+[submodule "Adafruit_INA219"]
+	path = Adafruit_INA219
+	url = https://github.com/adafruit/Adafruit_INA219
+[submodule "PubSubClient"]
+	path = PubSubClient
+	url = https://github.com/knolleary/pubsubclient.git
