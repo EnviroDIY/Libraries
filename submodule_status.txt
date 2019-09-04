@@ -28,5 +28,5 @@
  4f059fe21887e12e2785e2d0099e4fe5ecce8c4d SensorModbusMaster (v0.6.5)
  52973210424eafc9515ad1481327e04b022fa215 Sodaq_PcInt (v1.2.0)
  322d63cff1a382d24dc2ce7c01932f954acdcb1a Sodaq_RTCTimer (v1.0.0-2-g322d63c)
- a5b1681304f9a4d26370a581c6207d396608f1df TinyGSM (heads/master)
+ 712d85e7f31d551773c80a503b1b535efcd4109e TinyGSM (heads/master)
  e816e03392706d93408b87e3c5c72c660256556a YosemitechModbus (v0.2.1-9-ge816e03)
