@@ -95,3 +95,6 @@
 [submodule "PubSubClient"]
 	path = PubSubClient
 	url = https://github.com/knolleary/pubsubclient.git
+[submodule "NeoSWSerial"]
+	path = NeoSWSerial
+	url = https://github.com/SRGDamia1/NeoSWSerial.git
