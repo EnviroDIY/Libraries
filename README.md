@@ -57,8 +57,9 @@ To update all libraries, run the command:
 * [SDL SSD1306](https://github.com/switchdoclabs/SDL_Arduino_SSD1306)  - Controls the SwitchDoc Labs Grove [128x64 OLED](http://store.switchdoc.com/grove-128x64-i2c-oled-board-for-arduino-and-raspberry-pi/).
 * [RTCZero](https://github.com/arduino-libraries/RTCZero) - This library is _NOT_ compatible with the EnviroDIY Mayfly, but is included for convenience for anyone using a SAMD board.  This controls the real time clock and sleep modes for Atmel SAMD21 boards.
 * [Northern Widget MS5803 Library](https://github.com/NorthernWidget/MS5803) - Communicates with a Measurement Specialties MS5803 pressure sensor
-- [EnviroDIY KellerModbus Library](https://github.com/EnviroDIY/KellerModbus) - for all Keller modbus pressure and water level sensors.
+* [EnviroDIY KellerModbus Library](https://github.com/EnviroDIY/KellerModbus) - for all Keller modbus pressure and water level sensors.
 * [EnviroDIY YosemitechModbus](https://github.com/EnviroDIY/YosemitechModbus) - Communicates with [Yosemitech](http://www.yosemitech.com/en/) brand modbus sensors.
+* [NeoSWSerial](https://github.com/SRGDamia1/NeoSWSerial.git) - Yet another serial port emulator
 
 
 

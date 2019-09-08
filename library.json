@@ -328,6 +328,15 @@
             ]
         },
         {
+            "name": "NeoSWSerial",
+            "version": "https://github.com/SRGDamia1/NeoSWSerial.git",
+            "version_note": ">=3.0.6",
+            "note": "Another alternative for software serial port emulation.",
+            "authors": [
+                "SlashDevin"
+            ]
+        },
+        {
             "name": "PubSubClient",
             "library id": "89",
             "url": "https://github.com/knolleary/pubsubclient.git",
