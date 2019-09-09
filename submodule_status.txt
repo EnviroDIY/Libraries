@@ -11,7 +11,7 @@
  fa6da36171f558e1f4dcf420e832b4fa0c45d95c EnableInterrupt (1.1.0)
  4f2ec1f1287db05b3eaeeb5bed5810f58a46b3c4 EnviroDIY_DS3231 (v1.3.2-1-g4f2ec1f)
  d609e06bfe7f50ac7c5af94b16f15019a7e36bbf EnviroDIY_GPRSBee (v1.2.0-10-gd609e06)
- a41228000170ff254cf8c9a6189603dd59dd819b EnviroDIY_ModularSensors (v0.22.5-121-ga412280)
+ 816badd339737d8eec3492bc36ea1a2db02e2aac EnviroDIY_ModularSensors (v0.22.5-121-g816badd)
  242897441d21682366e7957b4d2f8e5f8a31a336 EnviroDIY_PCInt_PCINT0 (v1.2.0-9-g2428974)
  00ba220acc4bfb8b73f13546afebe95ff643adfb EnviroDIY_SDI12 (v1.3.6)
  ab34448cf80df6fefbf660e7813c621235564c69 EnviroDIY_SDI12_ExtInts (v1.3.6-22-gab34448)
