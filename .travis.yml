@@ -41,6 +41,7 @@ script:
     zip -d -q libraries "*/EnviroDIY_ModularSensors/doc/*";
     zip -d -q libraries "*/TinyGSM/extras/*";
     zip -d -q libraries "*/YosemitechModbus/doc/*";
+    zip -d -q libraries "*/SdFat/extras/*";
   fi
 - if [[ $submod_updated > 0 ]]; then
     zip -d -q libraries "*/doc/*.pdf";
