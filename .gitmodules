@@ -101,3 +101,6 @@
 [submodule "NeoSWSerial"]
 	path = NeoSWSerial
 	url = https://github.com/SRGDamia1/NeoSWSerial.git
+[submodule "Adafruit_BusIO"]
+	path = Adafruit_BusIO
+	url = https://github.com/adafruit/Adafruit_BusIO.git
