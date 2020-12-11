@@ -101,3 +101,9 @@
 [submodule "Adafruit_BusIO"]
 	path = Adafruit_BusIO
 	url = https://github.com/adafruit/Adafruit_BusIO.git
+[submodule "StreamDebugger"]
+	path = StreamDebugger
+	url = https://github.com/vshymanskyy/StreamDebugger
+[submodule "SoftwareWire"]
+	path = SoftwareWire
+	url = https://github.com/Testato/SoftwareWire.git
