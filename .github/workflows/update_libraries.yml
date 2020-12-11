@@ -36,7 +36,7 @@ jobs:
       - name: Install git-archive
         run: pip install -U git-archive-all
 
-      - name: Install submodules and zip
+      - name: Install submodules
         run: |
           git config --global user.email "sdamiano@stroudcenter.org"
           git config --global user.name "SRGDamia1"
@@ -46,12 +46,18 @@ jobs:
           git submodule update --remote --recursive
           git status
 
-      - name: Queue for commit
+      - name: Queue changes in submodules for commit
         run: |
           git add -A
           git status
-          git submodule status --recursive > submodule_status.txt <<EOF
+
+      - name: Create submodule_status file
+        run: |
+          git submodule status --recursive > submodule_status.txt
           git diff HEAD -- submodule_status.txt
+
+      - name: Zip submodules
+        run: |
           submod_updated=$(git diff --name-only HEAD -- submodule_status.txt)
           echo $submod_updated
           if [[ $submod_updated > 0 ]]; then
@@ -72,6 +78,9 @@ jobs:
           if [[ $is_changed > 0 ]]; then
             git add -A;
           fi
+
+      - name: Commit changes to master
+        run: |
           if [[ $is_changed > 0 ]]; then
             git commit -m "Updated submodules and zip (Github Action $GITHUB_ACTION) [ci skip]";
           fi
