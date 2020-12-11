@@ -58,6 +58,7 @@ Temporary Items
 .clang_complete
 .gcc-flags.json
 lib/readme.txt
+.history
 
 # RSA Keys
 deploy_key.pub

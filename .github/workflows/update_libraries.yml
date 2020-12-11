@@ -1,0 +1,96 @@
+name: Update library zip and submodules
+
+on:
+  schedule:
+    - cron:  '0 1 * * 0'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # check out the repo
+      - uses: actions/checkout@v2
+        with:
+          ref: master
+          submodules: false
+          persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
+          fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
+
+      - name: Restore or Cache pip
+        uses: actions/cache@v2
+        with:
+          path: ~/.cache/pip
+          # if requirements.txt hasn't changed, then it will be a "cache hit" and pip will be restored
+          # if requirements.txt HAS changed, it will be a "cache miss" and a new cache of pip will be created if the job completes successfully
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: ${{ runner.os }}-pip-
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          # Semantic version range syntax or exact version of a Python version
+          python-version: '2.7'
+
+      - name: Install git-archive
+        run: pip install -U git-archive-all
+
+      - name: Install submodules and zip
+        run: |
+          git config --global user.email "sdamiano@stroudcenter.org"
+          git config --global user.name "SRGDamia1"
+          git config --global push.default simple
+          git submodule init
+          git status
+          git submodule update --remote --recursive
+          git status
+          git add -A
+          git status
+          git submodule status --recursive > submodule_status.txt <<EOF
+          git diff HEAD -- submodule_status.txt
+          submod_updated=$(git diff --name-only HEAD -- submodule_status.txt)
+          echo $submod_updated
+          if [[ $submod_updated > 0 ]]; then
+              git-archive-all --force-submodules libraries.zip;
+          fi
+          if [[ $submod_updated > 0 ]]; then
+            zip -d -q libraries "*/.gitattributes" "*/.gitignore" "*/.gitmodules" "*/.github/*" "*.sh"  "*/Doxyfile" "*/.travis.yml";
+            zip -d -q libraries "*/TinyGSM/extras/*";
+            zip -d -q libraries "*/YosemitechModbus/doc/*";
+            zip -d -q libraries "*/SdFat/extras/*";
+          fi
+          if [[ $submod_updated > 0 ]]; then
+            zip -d -q libraries "*/doc/*.pdf";
+          fi
+          git status
+          is_changed=$(git diff --name-only)
+          echo $is_changed
+          if [[ $is_changed > 0 ]]; then
+            git add -A;
+          fi
+          if [[ $is_changed > 0 ]]; then
+            git commit -m "Updated submodules and zip (Github Action $GITHUB_ACTION) [ci skip]";
+          fi
+
+      - name: Push changes to master
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.SARA_PUSH_TOKEN }}
+          branch: master
+
+      - name: commit changes to platformio branch
+        run: |
+          git checkout platformio
+          git checkout master -- library.json
+          git add library.json
+          is_changed=$(git diff --name-only HEAD -- library.json)
+          echo $is_changed
+          if [[ $is_changed > 0 ]]; then
+            git commit -m "Updated library.json (Travis build $TRAVIS_BUILD_NUMBER) [ci skip]";
+          fi
+
+      - name: Push to platformio branch
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.SARA_PUSH_TOKEN }}
+          branch: platformio
