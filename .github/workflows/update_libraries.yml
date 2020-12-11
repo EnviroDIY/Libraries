@@ -45,6 +45,9 @@ jobs:
           git status
           git submodule update --remote --recursive
           git status
+
+      - name: Queue for commit
+        run: |
           git add -A
           git status
           git submodule status --recursive > submodule_status.txt <<EOF
