@@ -73,11 +73,17 @@ jobs:
         run: |
           echo "::debug::Archiving Submodules."
           git-archive-all --force-submodules libraries.zip
+          git status
           echo "::debug::Deleting extra files to decrease size of zip"
+          echo "::debug::Removing Git folders"
           zip -d -q libraries "*/.gitattributes" "*/.gitignore" "*/.gitmodules" "*/.github/*" "*.sh"  "*/Doxyfile" "*/.travis.yml"
+          echo "::debug::Removing TinyGSM extras"
           zip -d -q libraries "*/TinyGSM/extras/*"
+          echo "::debug::Removing YosemitechModbus extras"
           zip -d -q libraries "*/YosemitechModbus/doc/*"
+          echo "::debug::Removing SDFat extras"
           zip -d -q libraries "*/SdFat/extras/*"
+          echo "::debug::Removing other pdfs"
           zip -d -q libraries "*/doc/*.pdf"
           echo "::debug::Queueing changes for commit"
           git add -A;
