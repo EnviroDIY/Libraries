@@ -58,7 +58,7 @@ jobs:
         run: |
           git submodule status --recursive > submodule_status.txt
           git diff HEAD -- submodule_status.txt
-          echo "submod_updated=${{git diff --name-only HEAD -- submodule_status.txt}}" >> $GITHUB_ENV
+          echo "submod_updated=$(git diff --name-only HEAD -- submodule_status.txt)" >> $GITHUB_ENV
           echo $submod_updated
 
       - name: Zip submodules
@@ -91,7 +91,7 @@ jobs:
           git checkout platformio
           git checkout master -- library.json
           git add library.json
-          echo "manifest_changed=${{git diff --name-only HEAD -- library.json}}" >> $GITHUB_ENV
+          echo "manifest_changed=$(git diff --name-only HEAD -- library.json)" >> $GITHUB_ENV
           echo $manifest_changed
 
       - name: Commit changes to platformio branch
