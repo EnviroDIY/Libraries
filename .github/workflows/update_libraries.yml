@@ -58,6 +58,7 @@ jobs:
         run: |
           echo "::debug::Creating a new submodule status file.\n"
           git submodule status --recursive > submodule_status.txt
+          git status
           echo "::debug::Checking for changes in the submodule status file."
           git diff HEAD -- submodule_status.txt
           echo "::debug::Setting a new environment variable"
@@ -83,6 +84,7 @@ jobs:
           echo "::debug::Git status"
           git status
           echo "::debug::Setting a new environment variable"
+          git diff --name-only
           echo "is_changed=$(git diff --name-only)" >> $GITHUB_ENV
           echo "::debug::zip changed = $is_changed"
 
@@ -104,11 +106,15 @@ jobs:
         run: |
           echo "::debug::Checking out the platformio branch"
           git checkout platformio
+          git status
           echo "::debug::Checking out the library manifest from the master branch"
           git checkout master -- library.json
+          git status
           echo "::debug::Queueing changes to the manifest for commit"
           git add library.json
+          git status
           echo "::debug::Setting a new environment variable"
+          git diff --name-only HEAD -- library.json
           echo "manifest_changed=$(git diff --name-only HEAD -- library.json)" >> $GITHUB_ENV
           echo "::debug::manifest changed = $manifest_changed"
 
