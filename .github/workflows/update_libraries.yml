@@ -78,8 +78,6 @@ jobs:
           echo "::debug::Deleting extra files to decrease size of zip"
           echo "::debug::Removing Git folders"
           zip -d -q libraries "*/.gitattributes" "*/.gitignore" "*/.gitmodules" "*/.github/*" "*.sh"  "*/Doxyfile" "*/.travis.yml"
-          echo "::debug::Removing TinyGSM extras"
-          zip -d -q libraries "*/TinyGSM/extras/*"
           echo "::debug::Removing YosemitechModbus extras"
           zip -d -q libraries "*/YosemitechModbus/doc/*"
           echo "::debug::Removing SDFat extras"
