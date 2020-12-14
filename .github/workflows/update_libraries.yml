@@ -55,35 +55,27 @@ jobs:
         run: |
           git submodule status --recursive > submodule_status.txt
           git diff HEAD -- submodule_status.txt
+          echo "submod_updated=${{git diff --name-only HEAD -- submodule_status.txt}}" >> $GITHUB_ENV
+          echo $submod_updated
 
       - name: Zip submodules
+        if: ${{ env.submod_updated }}
         run: |
-          submod_updated=$(git diff --name-only HEAD -- submodule_status.txt)
-          echo $submod_updated
-          if [[ $submod_updated > 0 ]]; then
-              git-archive-all --force-submodules libraries.zip;
-          fi
-          if [[ $submod_updated > 0 ]]; then
-            zip -d -q libraries "*/.gitattributes" "*/.gitignore" "*/.gitmodules" "*/.github/*" "*.sh"  "*/Doxyfile" "*/.travis.yml";
-            zip -d -q libraries "*/TinyGSM/extras/*";
-            zip -d -q libraries "*/YosemitechModbus/doc/*";
-            zip -d -q libraries "*/SdFat/extras/*";
-          fi
-          if [[ $submod_updated > 0 ]]; then
-            zip -d -q libraries "*/doc/*.pdf";
-          fi
+          git-archive-all --force-submodules libraries.zip
+          zip -d -q libraries "*/.gitattributes" "*/.gitignore" "*/.gitmodules" "*/.github/*" "*.sh"  "*/Doxyfile" "*/.travis.yml"
+          zip -d -q libraries "*/TinyGSM/extras/*"
+          zip -d -q libraries "*/YosemitechModbus/doc/*"
+          zip -d -q libraries "*/SdFat/extras/*"
+          zip -d -q libraries "*/doc/*.pdf"
+          git add -A;
           git status
-          is_changed=$(git diff --name-only)
+          echo "is_changed=${{git diff --name-only}}" >> $GITHUB_ENV
           echo $is_changed
-          if [[ $is_changed > 0 ]]; then
-            git add -A;
-          fi
 
       - name: Commit changes to master
+        if: ${{ env.is_changed }}
         run: |
-          if [[ $is_changed > 0 ]]; then
-            git commit -m "Updated submodules and zip (Github Action $GITHUB_ACTION) [ci skip]";
-          fi
+          git commit -m "Updated submodules and zip (Github Action $GITHUB_ACTION) [ci skip]";
 
       - name: Push changes to master
         uses: ad-m/github-push-action@master
@@ -91,18 +83,20 @@ jobs:
           github_token: ${{ secrets.SARA_PUSH_TOKEN }}
           branch: master
 
-      - name: commit changes to platformio branch
+      - name: Checkout platformio branch
         run: |
           git checkout platformio
           git checkout master -- library.json
           git add library.json
-          is_changed=$(git diff --name-only HEAD -- library.json)
-          echo $is_changed
-          if [[ $is_changed > 0 ]]; then
-            git commit -m "Updated library.json (Travis build $TRAVIS_BUILD_NUMBER) [ci skip]";
-          fi
+          echo "manifest_changed=${{git diff --name-only HEAD -- library.json}}" >> $GITHUB_ENV
+          echo $manifest_changed
+
+      - name: Commit changes to platformio branch
+        if: ${{ env.manifest_changed }}
+        run: git commit -m "Updated library.json (Travis build $GITHUB_ACTION) [ci skip]";
 
       - name: Push to platformio branch
+        if: ${{ env.manifest_changed }}
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.SARA_PUSH_TOKEN }}
