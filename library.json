@@ -28,7 +28,7 @@
             "name": "EnviroDIY_ModularSensors",
             "library id": "1648",
             "url": "https://github.com/EnviroDIY/ModularSensors.git",
-            "version": ">=0.26.0",
+            "version": ">=0.25.0",
             "note": "EnviroDIY ModularSensors - A library that allows access to multiple sensors through a unified interface.",
             "authors": [
                 "Sara Damiano",
