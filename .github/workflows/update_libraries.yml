@@ -58,7 +58,7 @@ jobs:
         run: |
           git submodule status --recursive > submodule_status.txt
           git diff HEAD -- submodule_status.txt
-          echo ::set-env name=submod_updated::$(git diff --name-only HEAD -- submodule_status.txt)
+          echo ::exportVariable name=submod_updated::$(git diff --name-only HEAD -- submodule_status.txt)
           echo $submod_updated
 
       - name: Zip submodules
@@ -72,7 +72,7 @@ jobs:
           zip -d -q libraries "*/doc/*.pdf"
           git add -A;
           git status
-          echo ::set-env name=is_changed::$(git diff --name-only)
+          echo ::exportVariable name=is_changed::$(git diff --name-only)
           echo $is_changed
 
       - name: Commit changes to master
@@ -91,7 +91,7 @@ jobs:
           git checkout platformio
           git checkout master -- library.json
           git add library.json
-          echo ::set-env name=manifest_changed::$(git diff --name-only HEAD -- library.json)
+          echo ::exportVariable name=manifest_changed::$(git diff --name-only HEAD -- library.json)
           echo $manifest_changed
 
       - name: Commit changes to platformio branch
