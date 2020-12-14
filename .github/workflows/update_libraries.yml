@@ -72,7 +72,7 @@ jobs:
           zip -d -q libraries "*/doc/*.pdf"
           git add -A;
           git status
-          echo "is_changed=${{git diff --name-only}}" >> $GITHUB_ENV
+          echo "is_changed=$(git diff --name-only)" >> $GITHUB_ENV
           echo $is_changed
 
       - name: Commit changes to master
