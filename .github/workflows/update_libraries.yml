@@ -56,24 +56,38 @@ jobs:
 
       - name: Create submodule_status file
         run: |
+          echo "::debug::Creating a new submodule status file.\n"
           git submodule status --recursive > submodule_status.txt
+          echo "::debug::Checking for changes in the submodule status file."
           git diff HEAD -- submodule_status.txt
-          echo ::exportVariable name=submod_updated::$(git diff --name-only HEAD -- submodule_status.txt)
-          echo $submod_updated
+          echo "::debug::Setting a new environment variable"
+          echo "submod_updated=$(git diff --name-only HEAD -- submodule_status.txt)" >> $GITHUB_ENV
+          echo "::debug::submodules updated = $submod_updated"
+
+      - name: Check env variable
+        run: echo submodules updated = $submod_updated
 
       - name: Zip submodules
         if: ${{ env.submod_updated }}
         run: |
+          echo "::debug::Archiving Submodules."
           git-archive-all --force-submodules libraries.zip
+          echo "::debug::Deleting extra files to decrease size of zip"
           zip -d -q libraries "*/.gitattributes" "*/.gitignore" "*/.gitmodules" "*/.github/*" "*.sh"  "*/Doxyfile" "*/.travis.yml"
           zip -d -q libraries "*/TinyGSM/extras/*"
           zip -d -q libraries "*/YosemitechModbus/doc/*"
           zip -d -q libraries "*/SdFat/extras/*"
           zip -d -q libraries "*/doc/*.pdf"
+          echo "::debug::Queueing changes for commit"
           git add -A;
+          echo "::debug::Git status"
           git status
-          echo ::exportVariable name=is_changed::$(git diff --name-only)
-          echo $is_changed
+          echo "::debug::Setting a new environment variable"
+          echo "is_changed=$(git diff --name-only)" >> $GITHUB_ENV
+          echo "::debug::zip changed = $is_changed"
+
+      - name: Check env variable
+        run: echo zip changed = $is_changed
 
       - name: Commit changes to master
         if: ${{ env.is_changed }}
@@ -88,11 +102,18 @@ jobs:
 
       - name: Checkout platformio branch
         run: |
+          echo "::debug::Checking out the platformio branch"
           git checkout platformio
+          echo "::debug::Checking out the library manifest from the master branch"
           git checkout master -- library.json
+          echo "::debug::Queueing changes to the manifest for commit"
           git add library.json
-          echo ::exportVariable name=manifest_changed::$(git diff --name-only HEAD -- library.json)
-          echo $manifest_changed
+          echo "::debug::Setting a new environment variable"
+          echo "manifest_changed=$(git diff --name-only HEAD -- library.json)" >> $GITHUB_ENV
+          echo "::debug::manifest changed = $manifest_changed"
+
+      - name: Check env variable
+        run: echo manifest changed  = $manifest_changed
 
       - name: Commit changes to platformio branch
         if: ${{ env.manifest_changed }}
