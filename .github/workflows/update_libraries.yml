@@ -70,6 +70,7 @@ jobs:
 
       - name: Zip submodules
         if: ${{ env.submod_updated }}
+        continue-on-error: true
         run: |
           echo "::debug::Archiving Submodules."
           git-archive-all --force-submodules libraries.zip
