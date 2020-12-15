@@ -76,21 +76,37 @@ jobs:
           git-archive-all --force-submodules libraries.zip
           git status
 
-      - name: Clean zip
+      - name: Remove git folders and files from zip
         if: ${{ env.submod_updated }}
         continue-on-error: true
         run: |
           echo "::debug::Deleting extra files to decrease size of zip"
           echo "::debug::Removing Git folders"
           zip -d -q libraries "*/.gitattributes" "*/.gitignore" "*/.gitmodules" "*/.github/*" "*.sh"  "*/Doxyfile" "*/.travis.yml"
-          echo "::debug::Removing TinyGSM extras"
-          zip -d -q libraries "*/TinyGSM/extras/*"
-          echo "::debug::Removing YosemitechModbus extras"
-          zip -d -q libraries "*/YosemitechModbus/doc/*"
-          echo "::debug::Removing SDFat extras"
-          zip -d -q libraries "*/SdFat/extras/*"
+      - name: Remove pdfs from the zip
+        if: ${{ env.submod_updated }}
+        continue-on-error: true
+        run: |
           echo "::debug::Removing other pdfs"
           zip -d -q libraries "*/doc/*.pdf"
+      - name: Remove TinyGSM extras from the zip
+        if: ${{ env.submod_updated }}
+        continue-on-error: true
+        run: |
+          echo "::debug::Removing TinyGSM extras"
+          zip -d -q libraries "*/TinyGSM/extras/*"
+      - name: Remove YosemitechModbus extras from the zip
+        if: ${{ env.submod_updated }}
+        continue-on-error: true
+        run: |
+          echo "::debug::Removing YosemitechModbus extras"
+          zip -d -q libraries "*/YosemitechModbus/doc/*"
+      - name: Remove SDFat extras from the zip
+        if: ${{ env.submod_updated }}
+        continue-on-error: true
+        run: |
+          echo "::debug::Removing SDFat extras"
+          zip -d -q libraries "*/SdFat/extras/*"
 
       - name: Queue zip
         if: ${{ env.submod_updated }}
