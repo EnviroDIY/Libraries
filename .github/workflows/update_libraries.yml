@@ -136,6 +136,8 @@ jobs:
 
       - name: Checkout platformio branch
         run: |
+          echo "::debug::Stashing changes before switching branches"
+          git stash
           echo "::debug::Checking out the platformio branch"
           git checkout platformio
           git status
