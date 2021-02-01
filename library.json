@@ -346,7 +346,7 @@
           "authors": ["Bobby Schulz", "Anthony Aufdenkampe"],
           "frameworks": "arduino",
           "platforms": "atmelavr, atmelsam"
-        }
+        },
         {
             "name": "NeoSWSerial",
             "version": "https://github.com/SRGDamia1/NeoSWSerial.git",
