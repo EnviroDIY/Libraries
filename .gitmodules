@@ -107,3 +107,7 @@
 [submodule "SoftwareWire"]
 	path = SoftwareWire
 	url = https://github.com/Testato/SoftwareWire.git
+[submodule "Tally_Library"]
+	path = Tally_Library
+	url = https://github.com/NorthernWidget-Skunkworks/Tally_Library.git
+	branch = Dev_I2C
