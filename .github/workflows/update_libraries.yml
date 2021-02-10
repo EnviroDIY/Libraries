@@ -116,8 +116,8 @@ jobs:
           echo "::debug::Git status"
           git status
           echo "::debug::Setting a new environment variable"
-          git diff --name-only
-          echo "is_changed=$(git diff --name-only)" >> $GITHUB_ENV
+          git diff --name-only HEAD -- libraries.zip
+          echo "is_changed=$(git diff --name-only HEAD -- libraries.zip)" >> $GITHUB_ENV
           echo "::debug::zip changed = $is_changed"
 
       - name: Check env variable
