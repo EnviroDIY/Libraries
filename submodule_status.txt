@@ -34,4 +34,4 @@
  5b477abedc79157174392d296cb03f6fb4204428 StreamDebugger (v1.0.1)
  5b6a5fdc15e9a806c4601cbc5e3ebbd5668122c3 Tally_Library (remotes/origin/Dev_I2C)
  1576ecd18ed279c1a19d5d423bd6938fac071bd0 TinyGSM (v0.10.8-10-g1576ecd)
- 11292b9ded83e4dd87471231b2122da0949d65b6 YosemitechModbus (v0.2.2-14-g11292b9)
+ 113f3c5102601110f65528225b05c8d4e8b7dec2 YosemitechModbus (v0.2.2-15-g113f3c5)
