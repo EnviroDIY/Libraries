@@ -43,9 +43,6 @@
 [submodule "SdFat"]
 	path = SdFat
 	url = https://github.com/greiman/SdFat
-[submodule "TinyGSM"]
-	path = TinyGSM
-	url = https://github.com/EnviroDIY/TinyGSM
 [submodule "DallasTemperature"]
 	path = DallasTemperature
 	url = https://github.com/milesburton/Arduino-Temperature-Control-Library
