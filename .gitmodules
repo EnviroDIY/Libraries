@@ -108,3 +108,6 @@
 	path = Tally_Library
 	url = https://github.com/EnviroDIY/Tally_Library
 	branch = Dev_I2C
+[submodule "TinyGSM"]
+	path = TinyGSM
+	url = https://github.com/vshymanskyy/TinyGSM
