@@ -111,3 +111,9 @@
 [submodule "TinyGSM"]
 	path = TinyGSM
 	url = https://github.com/vshymanskyy/TinyGSM
+[submodule "Adafruit_SHT4x"]
+	path = Adafruit_SHT4x
+	url = https://github.com/adafruit/Adafruit_SHT4x
+[submodule "SparkFun_PCA9536_Arduino_Library"]
+	path = SparkFun_PCA9536_Arduino_Library
+	url = https://github.com/sparkfun/SparkFun_PCA9536_Arduino_Library
