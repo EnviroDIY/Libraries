@@ -126,7 +126,7 @@ jobs:
       - name: Commit changes to master
         if: ${{ env.is_changed }}
         run: |
-          git commit -m "Updated submodules and zip (Github Action $GITHUB_ACTION) [ci skip]";
+          git commit -m "Updated submodules and zip via Github Action (${{ github.workflow }} ${{ github.event_name }} ${{ github.run_number }} ) [ci skip]";
 
       - name: Push changes to master
         uses: ad-m/github-push-action@master
@@ -157,7 +157,7 @@ jobs:
 
       - name: Commit changes to platformio branch
         if: ${{ env.manifest_changed }}
-        run: git commit -m "Updated library.json (Travis build $GITHUB_ACTION) [ci skip]";
+        run: git commit -m "Updated library.json via Github Action (${{ github.workflow }} ${{ github.event_name }} ${{ github.run_number }} ) [ci skip]";
 
       - name: Push to platformio branch
         if: ${{ env.manifest_changed }}
