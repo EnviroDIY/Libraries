@@ -123,3 +123,9 @@
 [submodule "BMP388_DEV"]
 	path = BMP388_DEV
 	url = https://github.com/MartinL1/BMP388_DEV.git
+[submodule "Adafruit_SSD1306"]
+	path = Adafruit_SSD1306
+	url = https://github.com/adafruit/Adafruit_SSD1306
+[submodule "Adafruit-GFX-Library"]
+	path = Adafruit-GFX-Library
+	url = https://github.com/adafruit/Adafruit-GFX-Library
