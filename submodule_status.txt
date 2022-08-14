@@ -2,7 +2,7 @@
  71ae4cd38e746743ff9e119362e1c5d1e5a001db Adafruit_ADS1X15 (1.2.0-13-g71ae4cd)
  c135502d5abace165b561f7381422a7302c8a4e8 Adafruit_AM2315 (2.2.1)
  427d80dbdf20af00c67ec49425a0ecdd79d7f239 Adafruit_BME280 (2.2.2)
- 8fce6cda995edaf29419d642db245b8bb3268126 Adafruit_BusIO (1.13.1)
+ e89ae64bd3d2474d770bbed77e58686c39c0cecf Adafruit_BusIO (1.13.2)
  b2be3b193bbed547c0ddee3bb56ad41028a28f7f Adafruit_DHT (1.4.4)
  b13b34f024ec789b7580df2e6d0815ea460b5c0b Adafruit_INA219 (1.2.0)
  4d744533b89d07524958f49659ecc9c32bd39466 Adafruit_MPL115A2 (2.0.0)
