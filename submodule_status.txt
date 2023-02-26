@@ -38,5 +38,5 @@
  b7366c6377c8d536a8aedac1a13c74209523eca5 SparkFun_PCA9536_Arduino_Library (v1.2.2)
  0da9529ccfa6b2babc21212f4569f772d138f284 StreamDebugger (v1.0.1-2-g0da9529)
  3b128ad91db75cb2b22650487eaeebffc9bdc09b Tally_Library (heads/Dev_I2C)
- 3356c1d5c7bbde4a8440021b591453545ffccbde TinyGSM (v0.11.5-2-g3356c1d)
+ 8a911b218c1b2d03bb741855018fca062cefc479 TinyGSM (v0.11.5-4-g8a911b2)
  8f3badfd285a86e566a8da0e296fc4323578bbb8 YosemitechModbus (v0.2.5-40-g8f3badf)
