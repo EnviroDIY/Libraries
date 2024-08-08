@@ -1,146 +1,143 @@
 [submodule "DHT sensor library"]
-	path = Adafruit_DHT
-	url = http://github.com/adafruit/DHT-sensor-library
+path = Adafruit_DHT
+url = http://github.com/adafruit/DHT-sensor-library
 [submodule "Adafruit Unified Sensor"]
-	path = Adafruit_Sensor
-	url = https://github.com/adafruit/Adafruit_Sensor
+path = Adafruit_Sensor
+url = https://github.com/adafruit/Adafruit_Sensor
 [submodule "Adafruit TSL2561"]
-	path = Adafruit_TSL2561
-	url = https://github.com/adafruit/Adafruit_TSL2561
+path = Adafruit_TSL2561
+url = https://github.com/adafruit/Adafruit_TSL2561
 [submodule "EnviroDIY DS3231"]
-	path = EnviroDIY_DS3231
-	url = https://github.com/EnviroDIY/Sodaq_DS3231
+path = EnviroDIY_DS3231
+url = https://github.com/EnviroDIY/Sodaq_DS3231
 [submodule "EnviroDIY GPRSBee"]
-	path = EnviroDIY_GPRSBee
-	url = http://github.com/EnviroDIY/GPRSBee
-	branch = v1.2_hacked
+path = EnviroDIY_GPRSBee
+url = http://github.com/EnviroDIY/GPRSBee
+branch = v1.2_hacked
 [submodule "ModularSensors"]
-	path = EnviroDIY_ModularSensors
-	url = https://github.com/EnviroDIY/ModularSensors
+path = EnviroDIY_ModularSensors
+url = https://github.com/EnviroDIY/ModularSensors
 [submodule "EnviroDIY PcIntMod"]
-	path = EnviroDIY_PCInt_PCINT0
-	url = http://github.com/EnviroDIY/PcInt_PCINT0
+path = EnviroDIY_PCInt_PCINT0
+url = http://github.com/EnviroDIY/PcInt_PCINT0
 [submodule "EnviroDIY SDI12"]
-	path = EnviroDIY_SDI12
-	url = http://github.com/EnviroDIY/Arduino-SDI-12
-	branch = master
+path = EnviroDIY_SDI12
+url = http://github.com/EnviroDIY/Arduino-SDI-12
+branch = master
 [submodule "EnviroDIY SDI12Mod"]
-	path = EnviroDIY_SDI12_PCINT3
-	url = https://github.com/EnviroDIY/Arduino-SDI-12
-	branch = mayfly
+path = EnviroDIY_SDI12_PCINT3
+url = https://github.com/EnviroDIY/Arduino-SDI-12
+branch = mayfly
 [submodule "EnviroDIY SoftwareSerialMod"]
-	path = EnviroDIY_SoftwareSerial_PCINT12
-	url = http://github.com/EnviroDIY/SoftwareSerial_PCINT12
+path = EnviroDIY_SoftwareSerial_PCINT12
+url = http://github.com/EnviroDIY/SoftwareSerial_PCINT12
 [submodule "Sodaq PcInt"]
-	path = Sodaq_PcInt
-	url = http://github.com/SodaqMoja/Sodaq_PcInt
+path = Sodaq_PcInt
+url = http://github.com/SodaqMoja/Sodaq_PcInt
 [submodule "Sodaq RTCTimer"]
-	path = Sodaq_RTCTimer
-	url = http://github.com/SodaqMoja/RTCTimer
+path = Sodaq_RTCTimer
+url = http://github.com/SodaqMoja/RTCTimer
 [submodule "Adafruit AM2315"]
-	path = Adafruit_AM2315
-	url = https://github.com/adafruit/Adafruit_AM2315
+path = Adafruit_AM2315
+url = https://github.com/adafruit/Adafruit_AM2315
 [submodule "Adafruit BME280 Library"]
-	path = Adafruit_BME280
-	url = https://github.com/adafruit/Adafruit_BME280_Library
+path = Adafruit_BME280
+url = https://github.com/adafruit/Adafruit_BME280_Library
 [submodule "Adafruit ADS1X15"]
-	path = Adafruit_ADS1X15
-	url = https://github.com/soligen2010/Adafruit_ADS1X15
+path = Adafruit_ADS1X15
+url = https://github.com/soligen2010/Adafruit_ADS1X15
 [submodule "Adafruit MPL115A2"]
-	path = Adafruit_MPL115A2
-	url = https://github.com/adafruit/Adafruit_MPL115A2
+path = Adafruit_MPL115A2
+url = https://github.com/adafruit/Adafruit_MPL115A2
 [submodule "Adafruit INA219"]
-	path = Adafruit_INA219
-	url = https://github.com/adafruit/Adafruit_INA219
+path = Adafruit_INA219
+url = https://github.com/adafruit/Adafruit_INA219
 [submodule "Adafruit BusIO"]
-	path = Adafruit_BusIO
-	url = https://github.com/adafruit/Adafruit_BusIO.git
+path = Adafruit_BusIO
+url = https://github.com/adafruit/Adafruit_BusIO.git
 [submodule "SDL_SSD1306"]
-	path = SDL_SSD1306
-	url = http://github.com/switchdoclabs/SDL_Arduino_SSD1306
+path = SDL_SSD1306
+url = http://github.com/switchdoclabs/SDL_Arduino_SSD1306
 [submodule "SdFat"]
-	path = SdFat
-	url = https://github.com/greiman/SdFat
+path = SdFat
+url = https://github.com/greiman/SdFat
 [submodule "DallasTemperature"]
-	path = DallasTemperature
-	url = https://github.com/milesburton/Arduino-Temperature-Control-Library
+path = DallasTemperature
+url = https://github.com/milesburton/Arduino-Temperature-Control-Library
 [submodule "OneWire"]
-	path = OneWire
-	url = https://github.com/PaulStoffregen/OneWire
+path = OneWire
+url = https://github.com/PaulStoffregen/OneWire
 [submodule "EnviroDIY_SoftwareSerial_ExtInts"]
-	path = EnviroDIY_SoftwareSerial_ExtInts
-	url = https://github.com/EnviroDIY/SoftwareSerial_ExternalInts
+path = EnviroDIY_SoftwareSerial_ExtInts
+url = https://github.com/EnviroDIY/SoftwareSerial_ExternalInts
 [submodule "EnviroDIY_SDI12_ExtInts"]
-	path = EnviroDIY_SDI12_ExtInts
-	url = https://github.com/EnviroDIY/Arduino-SDI-12
-	branch = ExtInts
+path = EnviroDIY_SDI12_ExtInts
+url = https://github.com/EnviroDIY/Arduino-SDI-12
+branch = ExtInts
 [submodule "RTCZero"]
-	path = RTCZero
-	url = https://github.com/arduino-libraries/RTCZero
+path = RTCZero
+url = https://github.com/arduino-libraries/RTCZero
 [submodule "SensorModbusMaster"]
-	path = SensorModbusMaster
-	url = https://github.com/EnviroDIY/SensorModbusMaster
+path = SensorModbusMaster
+url = https://github.com/EnviroDIY/SensorModbusMaster
 [submodule "YosemitechModbus"]
-	path = YosemitechModbus
-	url = https://github.com/EnviroDIY/YosemitechModbus
+path = YosemitechModbus
+url = https://github.com/EnviroDIY/YosemitechModbus
 [submodule "KellerModbus"]
-	path = KellerModbus
-	url = https://github.com/EnviroDIY/KellerModbus
+path = KellerModbus
+url = https://github.com/EnviroDIY/KellerModbus
 [submodule "GroPointModbus"]
-	path = GroPointModbus
-	url = https://github.com/EnviroDIY/GroPointModbus.git
+path = GroPointModbus
+url = https://github.com/EnviroDIY/GroPointModbus.git
 [submodule "EnableInterrupt"]
-	path = EnableInterrupt
-	url = https://github.com/GreyGnome/EnableInterrupt
+path = EnableInterrupt
+url = https://github.com/GreyGnome/EnableInterrupt
 [submodule "AltSoftSerial"]
-	path = AltSoftSerial
-	url = https://github.com/PaulStoffregen/AltSoftSerial
+path = AltSoftSerial
+url = https://github.com/PaulStoffregen/AltSoftSerial
 [submodule "MS5803"]
-	path = MS5803
-	url = https://github.com/NorthernWidget/MS5803
+path = MS5803
+url = https://github.com/NorthernWidget/MS5803
 [submodule "PubSubClient"]
-	path = PubSubClient
-	url = https://github.com/knolleary/pubsubclient.git
+path = PubSubClient
+url = https://github.com/knolleary/pubsubclient.git
 [submodule "NeoSWSerial"]
-	path = NeoSWSerial
-	url = https://github.com/SRGDamia1/NeoSWSerial.git
+path = NeoSWSerial
+url = https://github.com/SRGDamia1/NeoSWSerial.git
 [submodule "StreamDebugger"]
-	path = StreamDebugger
-	url = https://github.com/vshymanskyy/StreamDebugger
+path = StreamDebugger
+url = https://github.com/vshymanskyy/StreamDebugger
 [submodule "SoftwareWire"]
-	path = SoftwareWire
-	url = https://github.com/Testato/SoftwareWire.git
+path = SoftwareWire
+url = https://github.com/Testato/SoftwareWire.git
 [submodule "Tally I2C"]
-	path = Tally_Library
-	url = https://github.com/EnviroDIY/Tally_Library
-	branch = Dev_I2C
+path = Tally_Library
+url = https://github.com/EnviroDIY/Tally_Library
+branch = Dev_I2C
 [submodule "TinyGSM"]
-	path = TinyGSM
-	url = https://github.com/vshymanskyy/TinyGSM
+path = TinyGSM
+url = https://github.com/vshymanskyy/TinyGSM
 [submodule "Adafruit SHT4x Library"]
-	path = Adafruit_SHT4x
-	url = https://github.com/adafruit/Adafruit_SHT4x
+path = Adafruit_SHT4x
+url = https://github.com/adafruit/Adafruit_SHT4x
 [submodule "SparkFun_PCA9536_Arduino_Library"]
-	path = SparkFun_PCA9536_Arduino_Library
-	url = https://github.com/sparkfun/SparkFun_PCA9536_Arduino_Library
-[submodule "BMP388_DEV"]
-	path = BMP388_DEV
-	url = https://github.com/MartinL1/BMP388_DEV.git
+path = SparkFun_PCA9536_Arduino_Library
+url = https://github.com/sparkfun/SparkFun_PCA9536_Arduino_Library
 [submodule "Adafruit_SSD1306"]
-	path = Adafruit_SSD1306
-	url = https://github.com/adafruit/Adafruit_SSD1306
+path = Adafruit_SSD1306
+url = https://github.com/adafruit/Adafruit_SSD1306
 [submodule "Adafruit-GFX-Library"]
-	path = Adafruit-GFX-Library
-	url = https://github.com/adafruit/Adafruit-GFX-Library
+path = Adafruit-GFX-Library
+url = https://github.com/adafruit/Adafruit-GFX-Library
 [submodule "Adafruit_MAX1704X"]
-	path = Adafruit_MAX1704X
-	url = https://github.com/adafruit/Adafruit_MAX1704X.git
+path = Adafruit_MAX1704X
+url = https://github.com/adafruit/Adafruit_MAX1704X.git
 [submodule "SparkFun_RV-8803_Arduino_Library"]
-	path = SparkFun_RV-8803_Arduino_Library
-	url = https://github.com/sparkfun/SparkFun_RV-8803_Arduino_Library
+path = SparkFun_RV-8803_Arduino_Library
+url = https://github.com/sparkfun/SparkFun_RV-8803_Arduino_Library
 [submodule "Adafruit_SPIFlash"]
-	path = Adafruit_SPIFlash
-	url = https://github.com/adafruit/Adafruit_SPIFlash
+path = Adafruit_SPIFlash
+url = https://github.com/adafruit/Adafruit_SPIFlash
 [submodule "LoRa_AT"]
-	path = LoRa_AT
-	url = https://github.com/EnviroDIY/LoRa_AT.git
+path = LoRa_AT
+url = https://github.com/EnviroDIY/LoRa_AT.git
