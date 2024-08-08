@@ -22,18 +22,6 @@ Please _**DO NOT**_ to use the green "Clone or Download" button to try to downlo
 
 If you prefer, and are familiar with Git, clone this repo into your Arduino\libraries folder.  The libraries should then be accessible to the Arduino Software (IDE).  Each library can also be downloaded individually by clicking on that library and then downloading a ZIP of only that library.
 
-### Installing Libraries in [PlatformIO](http://platformio.org/):
-
-The library manager in PlatformIO is far superior to anything in the [Arduino.cc IDE](https://www.arduino.cc/en/Main/Software).  I highly recommend using PlatformIO if you intend to do anything beyond very simple programming.
-
-To install the entire collection on PlatformIO enter this command into the terminal:
-
-`pio lib -g install https://github.com/EnviroDIY/Libraries.git#platformio`
-
-To update all libraries, run the command:
-
-`pio lib -g update`
-
 ## Included Libraries
 
 #### These libraries are for basic components built into the EnviroDIYMayfly:
