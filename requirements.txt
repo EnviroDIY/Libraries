@@ -1,0 +1,6 @@
+# Wheel for installs
+wheel
+
+# Git Archive All for easy zip making
+git-archive-all
+platformio
