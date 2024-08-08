@@ -129,34 +129,34 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: master
 
-      - name: Checkout platformio branch
-        run: |
-          echo "::debug::Stashing changes before switching branches"
-          git stash
-          echo "::debug::Checking out the platformio branch"
-          git checkout platformio
-          git status
-          echo "::debug::Checking out the library manifest from the master branch"
-          git checkout master -- library.json
-          git status
-          echo "::debug::Queueing changes to the manifest for commit"
-          git add library.json
-          git status
-          echo "::debug::Setting a new environment variable"
-          git diff --name-only HEAD -- library.json
-          echo "manifest_changed=$(git diff --name-only HEAD -- library.json)" >> $GITHUB_ENV
-          echo "::debug::manifest changed = $manifest_changed"
+      # - name: Checkout platformio branch
+      #   run: |
+      #     echo "::debug::Stashing changes before switching branches"
+      #     git stash
+      #     echo "::debug::Checking out the platformio branch"
+      #     git checkout platformio
+      #     git status
+      #     echo "::debug::Checking out the library manifest from the master branch"
+      #     git checkout master -- library.json
+      #     git status
+      #     echo "::debug::Queueing changes to the manifest for commit"
+      #     git add library.json
+      #     git status
+      #     echo "::debug::Setting a new environment variable"
+      #     git diff --name-only HEAD -- library.json
+      #     echo "manifest_changed=$(git diff --name-only HEAD -- library.json)" >> $GITHUB_ENV
+      #     echo "::debug::manifest changed = $manifest_changed"
 
-      - name: Check env variable
-        run: echo manifest changed  = $manifest_changed
+      # - name: Check env variable
+      #   run: echo manifest changed  = $manifest_changed
 
-      - name: Commit changes to platformio branch
-        if: ${{ env.manifest_changed }}
-        run: git commit -m "Updated library.json via Github Action (${{ github.workflow }} ${{ github.event_name }} ${{ github.run_number }} ) [ci skip]";
+      # - name: Commit changes to platformio branch
+      #   if: ${{ env.manifest_changed }}
+      #   run: git commit -m "Updated library.json via Github Action (${{ github.workflow }} ${{ github.event_name }} ${{ github.run_number }} ) [ci skip]";
 
-      - name: Push to platformio branch
-        if: ${{ env.manifest_changed }}
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: platformio
+      # - name: Push to platformio branch
+      #   if: ${{ env.manifest_changed }}
+      #   uses: ad-m/github-push-action@master
+      #   with:
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      #     branch: platformio
