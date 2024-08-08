@@ -28,8 +28,9 @@ jobs:
           python-version: '3.x'
           cache: 'pip'
 
-      - name: Install git-archive
-        run: pip install -U git-archive-all
+      - name: Install python dependencies
+        run: |
+          pip install --upgrade --upgrade-strategy only-if-needed -r requirements.txt
 
       - name: Install submodules
         run: |
