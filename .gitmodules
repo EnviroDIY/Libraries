@@ -126,3 +126,18 @@
 [submodule "Adafruit-GFX-Library"]
 	path = Adafruit-GFX-Library
 	url = https://github.com/adafruit/Adafruit-GFX-Library
+[submodule "Adafruit_MAX1704X"]
+	path = Adafruit_MAX1704X
+	url = https://github.com/adafruit/Adafruit_MAX1704X.git
+[submodule "SparkFun_RV-8803_Arduino_Library"]
+	path = SparkFun_RV-8803_Arduino_Library
+	url = https://github.com/sparkfun/SparkFun_RV-8803_Arduino_Library
+[submodule "Adafruit_SPIFlash"]
+	path = Adafruit_SPIFlash
+	url = https://github.com/adafruit/Adafruit_SPIFlash
+[submodule "LoRa_AT"]
+	path = LoRa_AT
+	url = https://github.com/EnviroDIY/LoRa_AT.git
+[submodule "GroPointModbus"]
+	path = GroPointModbus
+	url = https://github.com/EnviroDIY/GroPointModbus.git
