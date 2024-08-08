@@ -11,6 +11,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:                # Job-level permissions configuration starts here
+      contents: write           # 'write' access to repository contents
+      pull-requests: write      # 'write' access to pull requests
     if: "!contains(github.event.head_commit.message, 'ci skip')"
 
     steps:
@@ -123,7 +126,7 @@ jobs:
       - name: Push changes to master
         uses: ad-m/github-push-action@master
         with:
-          github_token: ${{ secrets.SARA_PUSH_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: master
 
       - name: Checkout platformio branch
@@ -155,5 +158,5 @@ jobs:
         if: ${{ env.manifest_changed }}
         uses: ad-m/github-push-action@master
         with:
-          github_token: ${{ secrets.SARA_PUSH_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: platformio
