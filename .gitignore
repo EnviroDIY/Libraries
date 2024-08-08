@@ -53,12 +53,16 @@ Temporary Items
 .idea/
 
 # Atom / PlatformIO
-.pioenvs
-.piolibdeps
 .clang_complete
 .gcc-flags.json
-lib/readme.txt
+
+# VSCode
+.vscode
 .history
+
+# PlatformIO
+.pio
+lib/readme.txt
 
 # RSA Keys
 deploy_key.pub
@@ -67,5 +71,5 @@ id_rsa.pub
 id_rsa
 
 # Other
-# library.json
 make_libjson.py
+AddSubmodules.sh
