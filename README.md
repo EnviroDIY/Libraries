@@ -1,4 +1,13 @@
 # Libraries
+
+> [!WARNING]
+> This is **NOT** the correct place to download dependencies for ModularSensors!
+> If you are looking for the library packages that are know to work with together with a specific version of ModularSensors, please download them from the [ModularSensors release page](https://github.com/EnviroDIY/ModularSensors/releases)!
+
+> [!CAUTION]
+> The libraries in this repository are the latest versions of each available on GitHub.
+> The libraries are **NOT** guaranteed to work together.
+
 This repository contains _**links**_ to various libraries that are used to support functions and features of the EnvidoDIY Mayfly Data Logger board.  Please note that these libraries are not maintained in this repository, but rather are independent repositories that are linked as submodules of this repository.
 
 Please let us know if you have any trouble installing the libraries!
