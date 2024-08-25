@@ -26,7 +26,7 @@
  c29bde766a47053d056131953ec4c8b1c7070806 EnviroDIY_SoftwareSerial_PCINT12 (heads/master)
  b89cdd54a41b63d7279e00ba320bab2b013a956e GroPointModbus (v0.1.1)
  a53ba771a02a01e0c56d3ae130b486a2a1442ba3 KellerModbus (v0.2.3)
- c2b0d5c30ee554f796f97a5abc48194d24adb027 LoRa_AT (v0.2.0-2-gc2b0d5c)
+ 3c0bcfaeb7739ac1f7f8408c6d26ed08e5698a2f LoRa_AT (v0.3.0-1-g3c0bcfa)
  21858dd65605a4a7da2f2fab27d82303e1a93917 MS5803 (heads/master)
  5a0daf7096b3851d7b63840b27a6b130580e3e63 NeoSWSerial (v3.0.2-41-g5a0daf7)
  72249e22ef9092b0750e303d266199965a89e500 OneWire (v2.3.8)
