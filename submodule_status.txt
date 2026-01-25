@@ -13,7 +13,7 @@
  0a9127a1e886ff1adb4c1b6f5958b24108d55aa6 Adafruit_Sensor (1.1.15)
  1b3453d5f4497f4a418bbf0a9324dbffd8f06ed0 Adafruit_TSL2561 (1.1.2)
  62a768a12bee5f80cad6f48af9e0803617161077 AltSoftSerial (1.4-14-g62a768a)
- 4da548a039c4ea0e3ee260be0e5dd5a3578ecdae DallasTemperature (v4.0.4-12-g4da548a)
+ e5d72a5f72922255a625fc6a57bd85010668742d DallasTemperature (v4.0.4-16-ge5d72a5)
  fa6da36171f558e1f4dcf420e832b4fa0c45d95c EnableInterrupt (1.1.0)
  fd51f5affcdb4115f5e026e7d0ed51acb5a4090a EnviroDIY_DS3231 (v1.3.6-2-gfd51f5a)
  d609e06bfe7f50ac7c5af94b16f15019a7e36bbf EnviroDIY_GPRSBee (v1.2.0-10-gd609e06)
