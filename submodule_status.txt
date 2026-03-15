@@ -15,7 +15,7 @@
  62a768a12bee5f80cad6f48af9e0803617161077 AltSoftSerial (1.4-14-g62a768a)
  3f570bbe2d0ad3cae55663cfaec1fedbc5b4fa50 DallasTemperature (v4.0.4-17-g3f570bb)
  fa6da36171f558e1f4dcf420e832b4fa0c45d95c EnableInterrupt (1.1.0)
- fd51f5affcdb4115f5e026e7d0ed51acb5a4090a EnviroDIY_DS3231 (v1.3.6-2-gfd51f5a)
+ 862b06e1604f499f1d1d33734b9b98381c1c3e86 EnviroDIY_DS3231 (v1.3.6-4-g862b06e)
  d609e06bfe7f50ac7c5af94b16f15019a7e36bbf EnviroDIY_GPRSBee (v1.2.0-10-gd609e06)
  f149a372ae47d95d474971abc25dd378bd332ecf EnviroDIY_ModularSensors (v0.37.0-12-gf149a372)
  242897441d21682366e7957b4d2f8e5f8a31a336 EnviroDIY_PCInt_PCINT0 (v1.2.0-9-g2428974)
