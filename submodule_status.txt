@@ -1,4 +1,4 @@
- 7ab6d09178a75a65b72d26dcbba3ec2f11882366 Adafruit-GFX-Library (1.12.5)
+ c5f9fb14f1fbb1407092b6fe8552339f67870baa Adafruit-GFX-Library (1.12.5-1-gc5f9fb1)
  71ae4cd38e746743ff9e119362e1c5d1e5a001db Adafruit_ADS1X15 (1.2.0-13-g71ae4cd)
  7f52340f38ce714f00ce47de39fd50c82e409184 Adafruit_AM2315 (2.2.3)
  ef712e95147de926b4545e379f6296ad271529b5 Adafruit_BME280 (2.3.0)
